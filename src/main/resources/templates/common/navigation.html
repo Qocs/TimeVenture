@@ -45,14 +45,12 @@
                 <span class="navi-menu-text">목록</span>
             </div>
         </a>
-        <a href="#" class="navi-menu-link">
-            <div class="navi-menu-item">
-                <div class="navi-menu-icon">
-                    <i class="fa-solid fa-chart-simple" style="transform: rotate(180deg);"></i>
-                </div>
-                <span class="navi-menu-text">보드</span>
+        <div class="navi-menu-item" data-target="/project/kanbanBoardList">
+            <div class="navi-menu-icon">
+                <i class="fa-solid fa-chart-simple" style="transform: rotate(180deg);"></i>
             </div>
-        </a>
+            <span class="navi-menu-text">보드</span>
+        </div>
         <a href="#" class="navi-menu-link">
             <div class="navi-menu-item">
                 <div class="navi-menu-icon">
@@ -77,14 +75,12 @@
                 <span class="navi-menu-text">메신저</span>
             </div>
         </a>
-        <a href="#" class="navi-menu-link">
-            <div class="navi-menu-item">
-                <div class="navi-menu-icon">
-                    <i class="fa-solid fa-paperclip" style="transform: rotate(135deg);"></i>
-                </div>
-                <span class="navi-menu-text">파일</span>
+        <div class="navi-menu-item" data-target="/project/attachments">
+            <div class="navi-menu-icon">
+                <i class="fa-solid fa-paperclip" style="transform: rotate(135deg);"></i>
             </div>
-        </a>
+            <span class="navi-menu-text">파일</span>
+        </div>
     </div>
     <div class="navi-member-container">
         <div class="navi-member-list">
@@ -121,22 +117,5 @@
     </div>
 </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const menuLinks = document.querySelectorAll('.navi-menu-link');
-
-        menuLinks.forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-
-                // Remove active class from all menu items
-                menuLinks.forEach(link => link.querySelector('.navi-menu-item').classList.remove('active'));
-
-                // Add active class to the clicked menu item
-                link.querySelector('.navi-menu-item').classList.add('active');
-            });
-        });
-    });
-</script>
 </body>
 </html>

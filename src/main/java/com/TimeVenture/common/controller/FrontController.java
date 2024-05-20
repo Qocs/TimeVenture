@@ -6,9 +6,20 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class FrontController {
 
-    @GetMapping("/projectKanbanBoard/kanbanBoardList")
+    @GetMapping("/project/kanbanBoardList")
     public String kanbanBoardList() {
         return "projectKanbanBoard/kanbanBoardList";
     }
+
+    @GetMapping("/main")
+    public String Main() {
+        return "common/main";
+    }
+
+    @GetMapping("/project/attachments")
+    public String Attachments() {
+        return "projectFile/attachment";
+    }
+
 }
 

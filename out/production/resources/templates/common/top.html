@@ -5,7 +5,9 @@
     <title>Top</title>
     <link rel="stylesheet" th:href="@{/css/common/top.css}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');</style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+    </style>
 </head>
 <body>
 <div th:fragment="top" class="top common-position common-size common-background">
@@ -29,7 +31,7 @@
         </div>
     </div>
     <button class="top-button-container common-position">
-        <span class="top-button-icon" th:style="'background-image: url(' + @{/image/common/top-plus.png} + ')'"></span>
+        <span class="top-button-icon" th:style="'background-image: url(\'/image/common/top-plus.png\')'"></span>
         <span class="top-button-text">생성</span>
     </button>
 </div>

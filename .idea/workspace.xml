@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ea3de82-7562-4ec6-9146-240d881ea880" name="Changes" comment="top&amp;sidebar">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/project/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/common/top.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/common/top.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/projectKanbanBoard/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/common/controller/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/project/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common/top.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common/top.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/projectKanbanBoard/.gitkeep" beforeDir="false" />
-    </list>
+    <list default="true" id="8ea3de82-7562-4ec6-9146-240d881ea880" name="Changes" comment="top&amp;sidebar" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

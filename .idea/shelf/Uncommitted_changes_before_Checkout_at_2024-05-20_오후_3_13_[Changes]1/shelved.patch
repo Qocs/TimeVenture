@@ -1,0 +1,32 @@
+Index: .idea/modules/TimeVenture.main.iml
+===================================================================
+diff --git a/.idea/modules/TimeVenture.main.iml b/.idea/modules/TimeVenture.main.iml
+deleted file mode 100644
+--- a/.idea/modules/TimeVenture.main.iml	
++++ /dev/null	
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module version="4">
+-  <component name="AdditionalModuleElements">
+-    <content url="file://$MODULE_DIR$/../../build/generated/sources/annotationProcessor/java/main">
+-      <sourceFolder url="file://$MODULE_DIR$/../../build/generated/sources/annotationProcessor/java/main" isTestSource="false" generated="true" />
+-    </content>
+-  </component>
+-</module>
+\ No newline at end of file
+Index: .idea/modules.xml
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+deleted file mode 100644
+--- a/.idea/modules.xml	
++++ /dev/null	
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TimeVenture.main.iml" filepath="$PROJECT_DIR$/.idea/modules/TimeVenture.main.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file

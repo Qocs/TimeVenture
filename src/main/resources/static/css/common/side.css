@@ -15,9 +15,13 @@
 }
 
 .side {
-    height: calc(100% - 60px);
-    left: 0;
+    position: fixed;
     top: 60px;
+    left: 0;
+    width: 200px;
+    height: calc(100vh - 60px);
+    background-color: #e1e1e1;
+    z-index: 999;
 }
 
 .side-upper {

@@ -5,11 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ea3de82-7562-4ec6-9146-240d881ea880" name="Changes" comment="top&amp;sidebar">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-05-20__3_13__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-05-20__3_13__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-05-20__3_13__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-05-20__3_13__Changes_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/TimeVenture/common/controller/FrontController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/TimeVenture/common/controller/FrontController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/common/navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/common/navigation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/common/side.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/common/side.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/common/top.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/common/top.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/common/navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/common/navigation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/projectKanbanBoard/kanbanBoardList.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/projectKanbanBoard/kanbanBoardList.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/common/controller/FrontController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/common/controller/FrontController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/common/navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/common/navigation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/common/side.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/common/side.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/common/top.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/common/top.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/project/attachment.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/project/attachment.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common/navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common/navigation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/projectFile/attachment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/projectFile/attachment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/projectKanbanBoard/kanbanBoardList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/projectKanbanBoard/kanbanBoardList.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +42,7 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="TimeVenture" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -92,16 +100,16 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.TimeVentureApplication.executor": "Run",
-    "git-widget-placeholder": "pastelq",
+    "git-widget-placeholder": "minseon",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/icanjava/springboot_intelliJ/TimeVenture/src/main/resources/templates/projectChatting",
+    "last_opened_file_path": "C:/TimeVenture/src/main/resources/static/image/common",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "advanced.settings",
@@ -110,12 +118,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\icanjava\springboot_intelliJ\TimeVenture\src\main\resources\templates\projectChatting" />
       <recent name="C:\TimeVenture\src\main\resources\static\image\common" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\icanjava\springboot_intelliJ\TimeVenture\src\main\resources\templates\common" />
-      <recent name="C:\icanjava\springboot_intelliJ\TimeVenture\src\main\resources\static\css\common" />
       <recent name="C:\TimeVenture\src\main\resources\static" />
       <recent name="C:\Study\SpringIntelliJ\workspace\TimeVenture\src\main\resources" />
       <recent name="C:\Study\SpringIntelliJ\workspace\TimeVenture\src\main\resources\templates\common" />
@@ -166,15 +171,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="top&amp;sidebar" />
     <option name="LAST_COMMIT_MESSAGE" value="top&amp;sidebar" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="org.hibernate.HibernateException" package="org.hibernate" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>Top</title>
+    <link rel="stylesheet" th:href="@{/css/common/top.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');</style>
+</head>
+<body>
+<div th:fragment="top" class="top common-position common-size common-background">
+    <button class="top-menu common-position">
+        <span class="top-menu-icon common-color">
+            <i class="fa-solid fa-bars fa-xl"></i>
+        </span>
+    </button>
+    <div class="top-profile-container common-position">
+        <div class="top-profile-img" th:style="'background-image: url(' + @{/image/common/stark.jpeg} + ')'"></div>
+        <button class="top-profile-arrow common-color">
+            <i class="fa-solid fa-angle-down"></i>
+        </button>
+    </div>
+    <div class="top-search-container common-position">
+        <div class="search-input">
+            <div class="search-icon common-color">
+                <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+            </div>
+            <input type="text" name="search" placeholder="검색" />
+        </div>
+    </div>
+    <button class="top-button-container common-position">
+        <span class="top-button-icon" th:style="'background-image: url(' + @{/image/common/top-plus.png} + ')'"></span>
+        <span class="top-button-text">생성</span>
+    </button>
+</div>
+</body>
+</html>

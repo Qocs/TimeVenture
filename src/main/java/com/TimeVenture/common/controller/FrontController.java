@@ -10,5 +10,8 @@ public class FrontController {
     public String kanbanBoardList() {
         return "projectKanbanBoard/kanbanBoardList";
     }
+
+    @GetMapping("/projectChatting/chatting")
+    public String chatting() { return "projectChatting/chatting"; }
 }
 

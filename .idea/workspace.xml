@@ -23,12 +23,7 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="TimeVenture" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -39,13 +34,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,9 +59,6 @@
     &quot;accountId&quot;: &quot;86b8f68e-5968-4225-b1ea-414c9964ac54&quot;
   }
 }</component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -81,10 +75,19 @@
     "Application.TimeVentureApplication.executor": "Run",
     "DefaultHtmlFileTemplate": "HTML File",
     "Gradle.TimeVenture [:TimeVentureApplication.main()].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "pastelq",
+    "Spring Boot.TimeVentureApplication.executor": "Run",
+    "git-widget-placeholder": "minseon",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Study/SpringIntelliJ/workspace/TimeVenture",
+    "last_opened_file_path": "C:/TimeVenture/src/main/resources/static/image/common",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "SDKs",
@@ -95,7 +98,11 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\TimeVenture\src\main\resources\static\image\common" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\TimeVenture\src\main\resources\static" />
       <recent name="C:\Study\SpringIntelliJ\workspace\TimeVenture\src\main\resources" />
       <recent name="C:\Study\SpringIntelliJ\workspace\TimeVenture\src\main\resources\templates\common" />
     </key>

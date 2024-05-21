@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
+<<<<<<< HEAD
+=======
+  <component name="ProjectResources">
+    <resource url="http://www.thymeleaf.org" location="" />
+  </component>
+>>>>>>> f0767342a7a2fd7bee38fec2ef28b9ed8853875e
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK" />
 </project>

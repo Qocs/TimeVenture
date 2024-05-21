@@ -6,23 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8ea3de82-7562-4ec6-9146-240d881ea880" name="Changes" comment="top&amp;sidebar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/TimeVenture/common/controller/FrontController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/TimeVenture/common/controller/FrontController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/common/navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/common/navigation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/common/side.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/common/side.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/common/top.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/common/top.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/common/navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/common/navigation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/projectKanbanBoard/kanbanBoardList.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/projectKanbanBoard/kanbanBoardList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/common/controller/FrontController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/common/controller/FrontController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/common/navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/common/navigation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/common/side.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/common/side.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/common/top.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/common/top.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/project/attachment.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/project/attachment.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common/navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common/navigation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/projectFile/attachment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/projectFile/attachment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/projectKanbanBoard/kanbanBoardList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/projectKanbanBoard/kanbanBoardList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/TimeVenture/TimeVentureApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +26,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="TimeVenture" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -77,6 +66,9 @@
     &quot;accountId&quot;: &quot;86b8f68e-5968-4225-b1ea-414c9964ac54&quot;
   }
 }</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -88,29 +80,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.TimeVentureApplication.executor": "Run",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Gradle.TimeVenture [:TimeVentureApplication.main()].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "stark",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Study/SpringIntelliJ/workspace/TimeVenture/src/main/java/com/TimeVenture/projectFile/controller/AttachmentController.java",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "advanced.settings",
-    "two.files.diff.last.used.file": "C:/Study/SpringIntelliJ/workspace/TimeVenture/src/main/java/com/TimeVenture/projectFile/controller/AttachmentController.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.TimeVentureApplication.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Gradle.TimeVenture [:TimeVentureApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Study/SpringIntelliJ/workspace/TimeVenture/src/main/java/com/TimeVenture/projectFile/controller/AttachmentController.java&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
+    &quot;two.files.diff.last.used.file&quot;: &quot;C:/Study/SpringIntelliJ/workspace/TimeVenture/src/main/java/com/TimeVenture/projectFile/controller/AttachmentController.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Study\SpringIntelliJ\workspace\TimeVenture\src\main\resources\templates\common" />
       <recent name="C:\Study\SpringIntelliJ\workspace\TimeVenture\src\main\resources" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -143,6 +142,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="top&amp;sidebar" />

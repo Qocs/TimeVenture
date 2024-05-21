@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ea3de82-7562-4ec6-9146-240d881ea880" name="Changes" comment="top&amp;sidebar">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/projectDashBoard/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/projectDashBoard/dashboard.html" afterDir="false" />
-    </list>
+    <list default="true" id="8ea3de82-7562-4ec6-9146-240d881ea880" name="Changes" comment="top&amp;sidebar" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +79,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "Gradle.TimeVenture [:TimeVentureApplication.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "seonguk",
+    "git-widget-placeholder": "pastelq",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Study/SpringIntelliJ/workspace/TimeVenture",
     "nodejs_package_manager_path": "npm",

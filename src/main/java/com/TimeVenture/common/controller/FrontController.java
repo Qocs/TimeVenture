@@ -21,5 +21,10 @@ public class FrontController {
         return "projectFile/attachment";
     }
 
+    @GetMapping("/project/chatting")
+    public String Chatting(){
+        return "projectChatting/chatting";
+    }
+
 }
 

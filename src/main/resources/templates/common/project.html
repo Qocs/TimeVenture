@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>Project</title>
+    <link rel="stylesheet" th:href="@{/css/common/navigation.css}">
+    <style>
+        .navi-content-container {
+            padding: 0;
+        }
+        .navi-content-wrapper {
+            margin-top: 203px;
+            left: 200px;
+            width: calc(100% - 200px);
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <div th:replace="~{/common/navigation :: navigation}"></div>
+    <div class="navi-content-wrapper">
+        <div class="navi-content-container"></div>
+    </div>
+</body>
+</html>

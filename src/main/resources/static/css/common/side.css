@@ -10,20 +10,25 @@
     position: absolute;
     width: 200px;
     background: #2E2E30;
-    border: 0.5px solid #F5F4F3;
+    border: 0;
     box-sizing: border-box;
 }
 
 .side {
-    height: calc(100% - 60px);
-    left: 0;
+    position: fixed;
     top: 60px;
+    left: 0;
+    width: 200px;
+    height: calc(100vh - 60px);
+    background-color: #e1e1e1;
+    z-index: 999;
 }
 
 .side-upper {
     height: 150px;
     left: 0;
     top: 0;
+    box-shadow: 0 0.25px #F5F4F3;
 }
 
 .side-lower {
@@ -42,7 +47,7 @@
     gap: 15px;
 }
 
-.menu-item {
+.side-menu-item {
     display: flex;
     align-items: center;
     gap: 10px;

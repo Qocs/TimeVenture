@@ -18,8 +18,8 @@
                     완료된 작업
                 </div>
                 <span class="dashboard-completedwork-count">
-          0
-        </span>
+                    0
+                </span>
             </div>
         </div>
         <div class="dashboard-uncompletedwork-1">
@@ -28,8 +28,8 @@
                     미완료 작업
                 </div>
                 <span class="dashboard-uncompletedwork-count">
-          0
-        </span>
+                    0
+                </span>
             </div>
         </div>
         <div class="dashboard-deadwork-1">
@@ -38,8 +38,8 @@
                     마감일이 지난 작업
                 </div>
                 <span class="dashboard-deadwork-count">
-          0
-        </span>
+                    0
+                </span>
             </div>
         </div>
         <div class="dashboard-totalwork-1">
@@ -48,8 +48,8 @@
                     총 작업
                 </div>
                 <span class="dashboard-totalwork-count">
-          0
-        </span>
+                    0
+                </span>
             </div>
         </div>
     </div>
@@ -76,6 +76,21 @@
 </div>
 </body>
 <script>
+    // JavaScript 코드 추가
+    document.addEventListener('DOMContentLoaded', (event) => {
+        // 데이터 예제
+        const data = {
+            completedWork: 5,
+            uncompletedWork: 10,
+            deadWork: 2,
+            totalWork: 17
+        };
 
+        // 요소 선택 및 데이터 삽입
+        document.querySelector('.dashboard-completedwork-count').textContent = data.completedWork;
+        document.querySelector('.dashboard-uncompletedwork-count').textContent = data.uncompletedWork;
+        document.querySelector('.dashboard-deadwork-count').textContent = data.deadWork;
+        document.querySelector('.dashboard-totalwork-count').textContent = data.totalWork;
+    });
 </script>
 </html>

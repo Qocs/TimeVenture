@@ -6,17 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8ea3de82-7562-4ec6-9146-240d881ea880" name="Changes" comment="top&amp;sidebar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/TimeVenture/common/controller/FrontController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/TimeVenture/common/controller/FrontController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/common/controller/FrontController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/common/controller/FrontController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/common/navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/common/navigation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/common/side.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/common/side.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/common/top.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/common/top.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common/navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common/navigation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common/side.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common/side.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/member/mypage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/member/mypage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/projectKanbanBoard/kanbanBoardList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/projectKanbanBoard/kanbanBoardList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/projectDashBoard/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/projectDashBoard/dashboard.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +41,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
-        <option value="CSS File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -74,7 +62,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Mongdori00/TimeVenture.git&quot;,
-    &quot;accountId&quot;: &quot;72ea9216-74b6-456e-bc28-b14324850266&quot;
+    &quot;accountId&quot;: &quot;cf5e12d2-f6b2-4842-98a4-1aa5d379af64&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -88,61 +76,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.TimeVentureApplication.executor&quot;: &quot;Run&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Gradle.TimeVenture [:TimeVentureApplication.main()].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.TimeVentureApplication.executor&quot;: &quot;Run&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;pastelq&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/TimeVenture/src/main/resources/static/image/common&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.TimeVentureApplication.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Gradle.TimeVenture [:TimeVentureApplication.main()].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "seonguk",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Study/SpringIntelliJ/workspace/TimeVenture",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\TimeVenture\src\main\resources\static\image\common" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\TimeVenture\src\main\resources\static" />
       <recent name="C:\Study\SpringIntelliJ\workspace\TimeVenture\src\main\resources" />
       <recent name="C:\Study\SpringIntelliJ\workspace\TimeVenture\src\main\resources\templates\common" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="TimeVentureApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="TimeVenture.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.TimeVenture.TimeVentureApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -153,11 +108,6 @@
       <option name="presentableId" value="Default" />
       <updated>1715931842508</updated>
       <workItem from="1716120613352" duration="4000" />
-      <workItem from="1716208928614" duration="344000" />
-      <workItem from="1716214362916" duration="872000" />
-      <workItem from="1716250701511" duration="6475000" />
-      <workItem from="1716260471929" duration="6069000" />
-      <workItem from="1716284788086" duration="2252000" />
     </task>
     <task id="LOCAL-00001" summary="top&amp;sidebar">
       <option name="closed" value="true" />

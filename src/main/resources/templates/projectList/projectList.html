@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>TimeVenture</title>
+    <link rel="stylesheet" href="css/project/projectList.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+          integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <style>
+        .toggle-icon.closed {
+            background-image: url('/static/image/common/righttriangle.png');
+        }
+        .toggle-icon.open {
+            background-image: url('/static/image/common/lowtriangle.png');
+        }
+        .toggle-icon {
+            display: inline-block;
+            width: 16px;  /* 적절한 크기로 조정 */
+            height: 16px; /* 적절한 크기로 조정 */
+            background-size: contain; /* 이미지를 요소 크기에 맞게 조정 */
+            background-repeat: no-repeat; /* 이미지 반복을 방지 */
+            vertical-align: middle; /* 텍스트와 아이콘이 중앙에 정렬되도록 */
+        }
+    </style>
+</head>
+<body>
+<div class="projectList_container">
+    <div class="projectList_task_header">
+        <button id="projectList_sort" onclick="openModal('sortModal', this)">정렬</button>
+        <!-- 정렬 모달 -->
+        <div id="sortModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('sortModal')">&times;</span>
+                <h2>정렬</h2>
+                <button onclick="sortTasks('startDate')">시작일</button>
+                <button onclick="sortTasks('endDate')">마감일</button>
+                <button onclick="sortTasks('priority')">우선순위</button>
+                <button onclick="sortTasks('status')">상태</button>
+            </div>
+        </div>
+        <button id="projectList_filter" onclick="openModal('filterModal', this)">필터링</button>
+        <!-- 필터링 모달 -->
+        <div id="filterModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('filterModal')">&times;</span>
+                <h2>필터링</h2>
+                <button onclick="filterTasks('incomplete')">미완료 작업</button>
+                <button onclick="filterTasks('complete')">완료된 작업</button>
+                <button onclick="filterTasks('myTasks')">내 작업</button>
+                <button onclick="filterTasks('thisWeek')">이번주 마감</button>
+                <button onclick="filterTasks('nextWeek')">다음주 마감</button>
+            </div>
+        </div>
+        <button>작업추가</button>
+    </div>
+</div>
+
+<div class="projectList_menu">
+    <span class="projectList_menu_name">작업이름</span>
+    <span class="projectList_menu_manager">담당자</span>
+    <span class="projectList_menu_deadline">마감일</span>
+    <span class="projectList_menu_priority">우선순위</span>
+    <span class="projectList_menu_status">상태</span>
+</div>
+
+<div class="projectList_task_section">
+    <h4 onclick="toggleSection('todo_section')">
+        <span class="toggle-icon closed" id="icon_todo_section"></span>
+        TO DO
+    </h4>
+    <div id="todo_section" class="projectList_task_items hidden">
+        <div class="projectList_task_item">
+            <div class="task-details">
+                <div class="projectList_task_status">
+                    <span class="projectList_task_name">DB 설계</span>
+                    <span class="avatar">🧑‍💻 민선</span>
+                    <span class="calendar">📅</span>
+                    <span class="projectList_status_pending">중간</span>
+                    <span class="projectList_status_ontrack">계획대로...</span>
+                </div>
+            </div>
+        </div>
+        <div class="projectList_task_item">
+            <div class="task-details">
+                <div class="projectList_task_status">
+                    <span class="projectList_task_name">코드 구현</span>
+                    <span class="avatar">🧑‍💻</span>
+                    <span class="calendar">📅</span>
+                </div>
+            </div>
+        </div>
+        <div class="projectList_task_item">
+            <div class="task-details">
+                <div class="projectList_task_status">
+                    <span class="projectList_task_name">작업 추가...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="projectList_task_section">
+    <h4 onclick="toggleSection('doing_section')">
+        <span class="toggle-icon closed" id="icon_doing_section"></span>
+        Doing
+    </h4>
+    <div id="doing_section" class="projectList_task_items hidden">
+        <div class="projectList_task_item">
+            <div class="task-details">
+                <div class="projectList_task_status">
+                    <span class="projectList_task_name">DB 설계</span>
+                    <span class="avatar">🧑‍💻 민선</span>
+                    <span class="calendar">📅</span>
+                    <span class="projectList_status_pending">중간</span>
+                    <span class="projectList_status_ontrack">계획대로...</span>
+                </div>
+            </div>
+        </div>
+        <div class="projectList_task_item">
+            <div class="task-details">
+                <div class="projectList_task_status">
+                    <span class="projectList_task_name">코드 구현</span>
+                    <span class="avatar">🧑‍💻</span>
+                    <span class="calendar">📅</span>
+                </div>
+            </div>
+        </div>
+        <div class="projectList_task_item">
+            <div class="task-details">
+                <div class="projectList_task_status">
+                    <span class="projectList_task_name">작업 추가...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="projectList_task_section">
+    <h4 onclick="toggleSection('done_section')">
+        <span class="toggle-icon closed" id="icon_done_section"></span>
+        Done
+    </h4>
+    <div id="done_section" class="projectList_task_items hidden">
+        <div class="projectList_task_item">
+            <div class="task-details">
+                <div class="projectList_task_status">
+                    <span class="projectList_task_name">DB 설계</span>
+                    <span class="avatar">🧑‍💻 민선</span>
+                    <span class="calendar">📅</span>
+                    <span class="projectList_status_pending">중간</span>
+                    <span class="projectList_status_ontrack">계획대로...</span>
+                </div>
+            </div>
+        </div>
+        <div class="projectList_task_item">
+            <div class="task-details">
+                <div class="projectList_task_status">
+                    <span class="projectList_task_name">코드 구현</span>
+                    <span class="avatar">🧑‍💻</span>
+                    <span class="calendar">📅</span>
+                </div>
+            </div>
+        </div>
+        <div class="projectList_task_item">
+            <div class="task-details">
+                <div class="projectList_task_status">
+                    <span class="projectList_task_name">작업 추가...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="projectList_task_section">
+    <h4 onclick="toggleSection('hold_section')">
+        <span class="toggle-icon closed" id="icon_hold_section"></span>
+        Hold
+    </h4>
+    <div id="hold_section" class="projectList_task_items hidden">
+        <div class="projectList_task_item">
+            <div class="task-details">
+                <div class="projectList_task_status">
+                    <span class="projectList_task_name">DB 설계</span>
+                    <span class="avatar">🧑‍💻 민선</span>
+                    <span class="calendar">📅</span>
+                    <span class="projectList_status_pending">중간</span>
+                    <span class="projectList_status_ontrack">계획대로...</span>
+                </div>
+            </div>
+        </div>
+        <div class="projectList_task_item">
+            <div class="task-details">
+                <div class="projectList_task_status">
+                    <span class="projectList_task_name">코드 구현</span>
+                    <span class="avatar">🧑‍💻</span>
+                    <span class="calendar">📅</span>
+                </div>
+            </div>
+        </div>
+        <div class="projectList_task_item">
+            <div class="task-details">
+                <div class="projectList_task_status">
+                    <span class="projectList_task_name">작업 추가...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/project/projectList.js"></script>
+</body>
+</html>

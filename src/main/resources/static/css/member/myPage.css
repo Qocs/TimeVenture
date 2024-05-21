@@ -1,0 +1,361 @@
+@charset "UTF-8";
+.my-page-frame-main .my-page-text-setting {
+  margin: 0 30px 36px 30px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 26px;
+  color: #595A5B;
+}
+.my-page-frame-main .my-page-text-photo {
+  margin: 0 28px 9px 28px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  color: #595A5B;
+}
+.my-page-frame-main .my-page-text-photo-upload {
+  margin-bottom: 6px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  color: #7C99D7;
+}
+.my-page-frame-main .my-page-text-photo-info {
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 12px;
+  color: #595A5B;
+}
+.my-page-frame-main .my-page-text-invite-type {
+  margin: 0 26px 7px 26px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 11px;
+  color: #595A5B;
+}
+.my-page-frame-main .my-page-text-invited-info {
+  margin: 8px 9px 8px 0;
+  display: inline-block;
+  width: 493px;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+.my-page-frame-main .my-page-container-name {
+  border-radius: 10px;
+  margin: 0 33px 22px 33px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.my-page-frame-main .my-page-text-name {
+  margin-bottom: 6px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 15px;
+  color: #595A5B;
+}
+.my-page-frame-main .my-page-box-name {
+  border-radius: 10px;
+  background: #FFFFFF;
+  width: 302px;
+  height: 31px;
+}
+.my-page-frame-main .my-page-container-title {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.my-page-frame-main .my-page-text-title {
+  margin-bottom: 6px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 15px;
+  color: #595A5B;
+}
+.my-page-frame-main .my-page-box-title {
+  border-radius: 10px;
+  background: #FFFFFF;
+  width: 302px;
+  height: 31px;
+}
+.my-page-frame-main .my-page-container-team {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.my-page-frame-main .my-page-text-team {
+  margin-bottom: 6px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 15px;
+  color: #595A5B;
+}
+.my-page-frame-main .my-page-box-team {
+  border-radius: 10px;
+  background: #FFFFFF;
+  width: 302px;
+  height: 31px;
+}
+.my-page-frame-main .my-page-container-email {
+  border-radius: 10px;
+  margin: 0 33px 22px 33px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.my-page-frame-main .my-page-text-email {
+  margin-bottom: 6px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 15px;
+  color: #595A5B;
+}
+.my-page-frame-main .my-page-box-email {
+  border-radius: 10px;
+  background: #FFFFFF;
+  width: 302px;
+  height: 31px;
+}
+.my-page-frame-main .my-page-container-introduction {
+  border-radius: 10px;
+  margin: 0 35px 53px 33px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.my-page-frame-main .my-page-text-introduction {
+  margin-bottom: 6px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 15px;
+  color: #595A5B;
+}
+.my-page-frame-main .my-page-box-introduction {
+  border-radius: 10px;
+  background: #FFFFFF;
+  width: 684px;
+  height: 74px;
+}
+.my-page-frame-main .my-page-figure-circle {
+  border-radius: 76px;
+  background: #F9F8F8;
+  margin-right: 28px;
+  width: 152px;
+  height: 152px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form-control-file {
+    display:none;
+}
+
+.my-page-frame-main .my-page-line-top {
+  background: #BABABA;
+  margin-bottom: 21px;
+  width: 752px;
+  height: 1px;
+}
+.my-page-frame-main {
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  translate: -50% 0;
+  width: 83px;
+  height: 34px;
+}
+.my-page-frame-main {
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  translate: -50% 0;
+  width: 83px;
+  height: 34px;
+}
+.my-page-frame-main .my-page-text-save {
+  position: relative;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+}
+.my-page-frame-main .my-page-text-drop {
+  position: relative;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+}
+
+.my-page-text-drop {
+   margin-left:21px;
+}
+
+.my-page-text-save {
+   margin-left:21px;
+}
+
+.my-page-frame-main .my-page-container-drop-button .button {
+  border-radius: 20px;
+  position: relative;
+  margin-right: 23px;
+  display: flex;
+  padding: 5px 0.2px 5px 0;
+  width: 83px;
+  box-sizing: border-box;
+}
+.my-page-frame-main .my-page-container-save-button .button {
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  padding: 5px 0.2px 5px 0;
+  width: 83px;
+  box-sizing: border-box;
+}
+.my-page-frame-main {
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  padding: 37px 0 29px 0;
+  width: 752px;
+  box-sizing: border-box;
+  top:auto;
+}
+.my-page-frame-main .container {
+  display: flex;
+  flex-direction: row;
+  width: 189px;
+  box-sizing: border-box;
+}
+.my-page-frame-main .container-1 {
+  margin: 0 35px 0 26px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 691px;
+  box-sizing: border-box;
+}
+.my-page-frame-main .container-2 {
+  margin: 0 68px 26px 68px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.my-page-frame-main .container-3 {
+  margin: 54px 0 55px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.my-page-frame-main .container-4 {
+  margin: 0 35px 22px 33px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 684px;
+  box-sizing: border-box;
+}
+
+        /* 모달 배경 스타일 */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        /* 모달 콘텐츠 스타일 */
+        .modal-content {
+                    background-color: #fefefe;
+                    margin: 5% auto; /* 중앙 정렬을 위한 margin */
+                    padding: 20px;
+                    border: 1px solid #888;
+                    width: 752px;
+                    height: 850px; /* 고정 높이 설정 */
+                    border-radius: 10px;
+                    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* 그림자 추가 */
+                }
+
+        /* 닫기 버튼 스타일 */
+        .close {
+          color: #aaa;
+          position: absolute;
+          top: 10px; /* 모달 내용 상단으로부터의 거리 */
+          right: 10px; /* 모달 내용 우측으로부터의 거리 */
+          font-size: 28px;
+          font-weight: bold;
+        }
+
+        /* hover 및 focus 스타일도 유사하게 유지 */
+        .close:hover,
+        .close:focus {
+          color: black;
+          text-decoration: none;
+          cursor: pointer;
+        }
+
+
+        /* 프로필 이미지 스타일 */
+        .my-page-figure-circle {
+            border-radius: 76px;
+            background: #F9F8F8;
+            margin-right: 28px;
+            width: 152px;
+            height: 152px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+

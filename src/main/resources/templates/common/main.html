@@ -5,7 +5,7 @@
     <title>TimeVenture</title>
     <link rel="stylesheet" th:href="@{/css/common/top.css}">
     <link rel="stylesheet" th:href="@{/css/common/side.css}">
-    <link rel="stylesheet" th:href="@{/css/common/navigation.css}">
+    <link rel="icon" th:href="@{/image/common/logo.png}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
           integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -19,22 +19,16 @@
             height: 100vh;
         }
         .content-container {
-            padding: 20px;
-        }
-        .content-wrapper {
-            margin-top: 192px;
+            margin-top: 60px;
             margin-left: 200px;
             width: calc(100% - 200px);
-            flex: 1;
-            overflow-y: auto;
         }
     </style>
-    <script th:src="@{/js/common/navigation.js}"></script>
+    <script th:src="@{/js/common/main.js}"></script>
 </head>
 <body>
     <div th:replace="~{/common/top :: top}"></div>
     <div th:replace="~{/common/side :: side}"></div>
-    <div th:replace="~{/common/navigation :: navigation}"></div>
     <div class="content-wrapper">
         <div class="content-container"></div>
     </div>

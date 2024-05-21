@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ea3de82-7562-4ec6-9146-240d881ea880" name="Changes" comment="top&amp;sidebar">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-05-20__3_13__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-05-20__3_13__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-05-20__3_13__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-05-20__3_13__Changes_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/TimeVenture/common/controller/FrontController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/TimeVenture/common/controller/FrontController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/common/navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/common/navigation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/projectChatting/chatting.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/projectChatting/chatting.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/common/controller/FrontController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/common/controller/FrontController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/common/navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/common/navigation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/common/side.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/common/side.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/common/top.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/common/top.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common/navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common/navigation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/projectChatting/chatting.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/projectChatting/chatting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common/side.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common/side.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/member/mypage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/member/mypage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/projectKanbanBoard/kanbanBoardList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/projectKanbanBoard/kanbanBoardList.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +99,7 @@
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;Spring Boot.TimeVentureApplication.executor&quot;: &quot;Run&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;pastelq&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/TimeVenture/src/main/resources/static/image/common&quot;,
@@ -151,7 +155,9 @@
       <workItem from="1716120613352" duration="4000" />
       <workItem from="1716208928614" duration="344000" />
       <workItem from="1716214362916" duration="872000" />
-      <workItem from="1716250701511" duration="761000" />
+      <workItem from="1716250701511" duration="6475000" />
+      <workItem from="1716260471929" duration="6069000" />
+      <workItem from="1716284788086" duration="2252000" />
     </task>
     <task id="LOCAL-00001" summary="top&amp;sidebar">
       <option name="closed" value="true" />

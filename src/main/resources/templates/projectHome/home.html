@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>홈</title>
+    <link rel="stylesheet" th:href="@{/css/common/home.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+          integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+<div class="home-container">
+    <!-- 상단: 요약 -->
+    <div class="home-summary">
+        <h1>홈</h1>
+        <div th:text="${#calendars.format(#calendars.createNow(), 'MM월 dd일 EEEE')}" class="home-date">2024-05-21</div>
+        <div class="greeting">안녕하세요, 이름 님</div>
+        <div class="display-container">
+            <div class="home-dropdown">
+                <button id="home-dropdown-btn">나의 한달<i class="fa-solid fa-caret-down"></i></button>
+                <ul id="home-dropdown-content" class="home-dropdown-content">
+                    <li>나의 한주</li>
+                    <li>나의 한달</li>
+                </ul>
+            </div>
+            <div class="home-summary">
+                <i class="fa-regular fa-circle-check"></i>
+                <span class="completed-tasks">0 완료된 작업</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 하단: 본문 -->
+    <div class="content-wrapper">
+        <div class="my-tasks">
+            <div class="home-title">내 작업</div>
+            <div class="profile-img"></div>
+            <div class="menu">
+                <div class="scheduled">예정</div>
+                <div class="overdue">마감일 지남(x개)</div>
+                <div class="completed">완료됨</div>
+            </div>
+            <button class="create-task-btn"><i class="fa-solid fa-plus"></i> 작업 생성</button>
+
+            <div class="task-list">
+                <div class="task">
+                    <div class="task-name">작업 이름</div>
+                    <div class="task-info">
+                        <div class="project-name">프로젝트명</div>
+                        <div class="due-date">5월 20일</div>
+                    </div>
+                </div>
+
+                <div class="completed-task">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <div class="task-name">완료된 작업 예시</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-content">
+            <div class="projects">
+                <div class="home-title">프로젝트</div>
+                <div class="sort-btn">최근<i class="fa-solid fa-caret-down"></i></div>
+                <div class="project-list">
+                    <div class="create-project-btn">
+                        <div class="icon"></div>
+                        <div class="label">프로젝트 생성</div>
+                    </div>
+                    <div class="project">
+                        <div class="icon"></div>
+                        <div class="project-name">프로젝트명</div>
+                    </div>
+                    <div class="project">
+                        <div class="icon"></div>
+                        <div class="project-name">프로젝트명</div>
+                        <div class="status"><i class="fa-solid fa-lock"></i> 비공개</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="users">
+                <div class="home-title">사용자</div>
+                <div class="favorite-collaborators"><i class="fa-regular fa-star"></i> 별표 표시한 협업 참여자</div>
+                <div class="other-user">
+                    <div class="profile-img"></div>
+                    <div class="user-name">사용자 이름</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script th:src="@{/js/project/home.js}"></script>
+</body>
+</html>

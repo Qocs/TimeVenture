@@ -9,9 +9,8 @@ a {
     top: 60px;
     left: 200px;
     width: calc(100% - 200px);
-    height: 132px;
+    height: 142px;
     z-index: 998;
-    padding-bottom: 10px;
     border-bottom: 0.5px solid #565557; /* 메뉴 아래의 0.5px 선 추가 */
 }
 

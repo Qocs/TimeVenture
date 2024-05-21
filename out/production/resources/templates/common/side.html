@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>Side</title>
+    <link rel="stylesheet" th:href="@{/css/common/side.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');</style>
+</head>
+<body>
+<div th:fragment="side" class="side common-side">
+    <div class="side-upper common-side">
+        <div class="side-menu">
+            <button class="menu-item">
+                <span class="menu-icon">
+                    <i class="fa-solid fa-house"></i>
+                </span>
+                <span class="menu-text">홈</span>
+            </button>
+            <button class="menu-item">
+                <span class="menu-icon">
+                    <i class="fa-regular fa-user"></i>
+                </span>
+                <span class="menu-text">마이페이지</span>
+            </button>
+            <button class="menu-item">
+                <span class="menu-icon">
+                    <i class="fa-solid fa-lock"></i>
+                </span>
+                <span class="menu-text">프로필 수정</span>
+            </button>
+        </div>
+    </div>
+    <div class="side-lower common-side">
+        <div class="side-section">
+            <div class="section-title">
+                <span class="section-text">즐겨찾기</span>
+            </div>
+            <button class="section-content">
+                <span class="section-icon">
+                    <i class="fa-regular fa-folder"></i>
+                </span>
+                <span class="section-text">프로젝트명</span>
+            </button>
+        </div>
+        <div class="side-section">
+            <div class="section-title">
+                <span class="section-text">프로젝트</span>
+            </div>
+            <button class="section-content">
+                <span class="section-icon">
+                    <i class="fa-regular fa-folder"></i>
+                </span>
+                <span class="section-text">프로젝트명</span>
+            </button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

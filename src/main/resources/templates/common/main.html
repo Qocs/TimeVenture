@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>TimeVenture</title>
+    <link rel="stylesheet" th:href="@{/css/common/top.css}">
+    <link rel="stylesheet" th:href="@{/css/common/side.css}">
+    <link rel="icon" th:href="@{/image/common/logo.png}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+          integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');</style>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .content-container {
+            margin-top: 60px;
+            margin-left: 200px;
+            width: calc(100% - 200px);
+        }
+    </style>
+    <script th:src="@{/js/common/main.js}"></script>
+</head>
+<body>
+    <div th:replace="~{/common/top :: top}"></div>
+    <div th:replace="~{/common/side :: side}"></div>
+    <div class="content-wrapper">
+        <div class="content-container"></div>
+    </div>
+</body>
+</html>

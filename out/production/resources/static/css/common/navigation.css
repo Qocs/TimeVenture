@@ -4,13 +4,13 @@ a {
     color: #565557;
     text-decoration: none;
 }
-
 .navigation {
-    position: absolute;
-    width: calc(100% - 200px);
-    height: 132px;
-    left: 200px;
+    position: fixed;
     top: 60px;
+    left: 200px;
+    width: calc(100% - 200px);
+    height: 142px;
+    z-index: 998;
     border-bottom: 0.5px solid #565557; /* 메뉴 아래의 0.5px 선 추가 */
 }
 
@@ -81,6 +81,7 @@ a {
     align-items: center;
     gap: 5px;
     position: relative;
+    cursor: pointer;
 }
 
 .navi-menu-icon,
@@ -95,6 +96,11 @@ a {
 
 .navi-menu-item.active .navi-menu-text {
     font-weight: bold; /* 클릭 시 bold체로 변경 */
+}
+
+.navi-menu-item:hover {
+    background-color: #f0f0f0;
+    border-top-radius: 5px;
 }
 
 .navi-menu-item.active::after {

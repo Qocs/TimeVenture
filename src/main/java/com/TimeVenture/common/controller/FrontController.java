@@ -6,11 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class FrontController {
 
-<<<<<<< HEAD
-    @GetMapping("/project/kanbanBoardList")
-=======
     @GetMapping("/project/kanban")
->>>>>>> a22ea2e327f0acfd10ce43422216db392876dbbf
     public String kanbanBoardList() {
         return "projectKanbanBoard/kanbanBoardList";
     }
@@ -25,8 +21,6 @@ public class FrontController {
         return "projectFile/attachment";
     }
 
-<<<<<<< HEAD
-=======
     @GetMapping("/project/list")
     public String ProjectList() {
         return "projectList/projectList";
@@ -77,6 +71,5 @@ public class FrontController {
         return "member/login";
     }
 
->>>>>>> a22ea2e327f0acfd10ce43422216db392876dbbf
 }
 

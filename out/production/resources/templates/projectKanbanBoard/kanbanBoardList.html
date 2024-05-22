@@ -1,14 +1,56 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html xmlns:th="http://www.thymeleaf.org" lang="kr">
 <head>
     <meta charset="UTF-8">
     <title>kanbanBoard</title>
+=======
+<html lang="kr" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>TimeVenture</title>
+    <link rel="stylesheet" href="/css/project/kanbanBoardList.css">
+>>>>>>> a22ea2e327f0acfd10ce43422216db392876dbbf
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
           integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <style>@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');</style>
 </head>
+<<<<<<< HEAD
 <body>
 大家好!
+=======
+
+<body>
+<form class="kanban_input_container">
+    <div class="kanban_board">
+        <div class="kanban_column" id="todo">
+            <h3>Todo</h3>
+            <div class="kanban_task_list" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <!-- 작업 항목을 여기에 추가하세요 -->
+                <div class="kanban_task" draggable="true" ondragstart="dragStart(event)" id="task1">Task 1</div>
+                <div class="kanban_task" draggable="true" ondragstart="dragStart(event)" id="task2">Task 2</div>
+            </div>
+        </div>
+        <div class="kanban_column" id="doing">
+            <h3>Doing</h3>
+            <div class="kanban_task_list" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="kanban_column" id="done">
+            <h3>Done</h3>
+            <div class="kanban_task_list" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="kanban_column" id="hold">
+            <h3>Hold</h3>
+            <div class="kanban_task_list" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <!-- 작업 항목을 여기에 추가하세요 -->
+                <div class="kanban_task" draggable="true" ondragstart="dragStart(event)" id="task3">Task 3</div>
+                <div class="kanban_task" draggable="true" ondragstart="dragStart(event)" id="task4">Task 4</div>
+            </div>
+        </div>
+    </div>
+</form>
+<script src="/js/project/kanbanBoardList.js"></script>
+>>>>>>> a22ea2e327f0acfd10ce43422216db392876dbbf
 </body>
 </html>

@@ -119,5 +119,8 @@ public class FrontController {
     @GetMapping("/forgotPassword")
     public String forgotPassword() { return "member/findPassword";}
 
-}
+    @GetMapping("/testdetail")
+    public String testdetail() {return "common/detail";}
+    }
+
 

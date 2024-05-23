@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ea3de82-7562-4ec6-9146-240d881ea880" name="Changes" comment="top&amp;sidebar">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-05-20__3_13__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-05-20__3_13__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-05-20__3_13__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-05-20__3_13__Changes_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/common/controller/FrontController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/common/controller/FrontController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,13 +45,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
       </list>
     </option>
-  </component>
-  <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/yontree" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -59,20 +58,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
+    &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;OPEN&quot;,
     &quot;assignee&quot;: &quot;star-kw&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Mongdori00/TimeVenture.git",
-    "accountId": "72ea9216-74b6-456e-bc28-b14324850266"
-  }
-}]]></component>
+    }
+    }</component>
+  <component name="GithubPullRequestsUISettings">{
+    &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Mongdori00/TimeVenture.git&quot;,
+    &quot;accountId&quot;: &quot;cf5e12d2-f6b2-4842-98a4-1aa5d379af64&quot;
+    }
+    }</component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 0
-}</component>
+    &quot;associatedIndex&quot;: 0
+    }</component>
   <component name="ProjectId" id="2gaNgquNTOLxn7Gk3h5SCdCFISQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -86,71 +85,31 @@
     "Application.TimeVentureApplication.executor": "Run",
     "DefaultHtmlFileTemplate": "HTML File",
     "Gradle.TimeVenture [:TimeVentureApplication.main()].executor": "Run",
+    "JavaScript Debug.login.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "pastelq",
+    "Spring Boot.TimeVentureApplication.executor": "Run",
+    "git-widget-placeholder": "seongook",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/icanjava/springboot_intelliJ/TimeVenture/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
+    "last_opened_file_path": "C:/icanjava/springboot_intelliJ",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
+    "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="ReactorSettings">
-    <option name="notificationShown" value="true" />
-  </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.TimeVenture.email" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\icanjava\springboot_intelliJ\TimeVenture\src\main\resources" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\icanjava\springboot_intelliJ\TimeVenture\src\main\resources\static" />
-      <recent name="C:\icanjava\springboot_intelliJ\TimeVenture\src\main\resources" />
       <recent name="C:\Study\SpringIntelliJ\workspace\TimeVenture\src\main\resources" />
       <recent name="C:\Study\SpringIntelliJ\workspace\TimeVenture\src\main\resources\templates\common" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TimeVentureApplication">
-    <configuration name="TimeVentureApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.TimeVenture.TimeVentureApplication" />
-      <module name="TimeVenture.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.TimeVenture.join.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TimeVentureApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="TimeVenture.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.TimeVenture.TimeVentureApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.TimeVentureApplication" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
       </set>
     </attachedChunks>
   </component>
@@ -163,7 +122,6 @@
       <option name="presentableId" value="Default" />
       <updated>1715931842508</updated>
       <workItem from="1716120613352" duration="4000" />
-      <workItem from="1716376119630" duration="19968000" />
     </task>
     <task id="LOCAL-00001" summary="top&amp;sidebar">
       <option name="closed" value="true" />
@@ -190,5 +148,20 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="top&amp;sidebar" />
     <option name="LAST_COMMIT_MESSAGE" value="top&amp;sidebar" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/TimeVenture/TimeVentureApplication.java</url>
+          <line>10</line>
+          <properties class="com.TimeVenture.TimeVentureApplication" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -5,12 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ea3de82-7562-4ec6-9146-240d881ea880" name="Changes" comment="top&amp;sidebar">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-05-20__3_13__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-05-20__3_13__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-05-20__3_13__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-05-20__3_13__Changes_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/common/controller/FrontController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/common/controller/FrontController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectCalendar/controller/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectCalendar/model/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectCalendar/repository/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectCalendar/service/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectChatting/controller/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectChatting/model/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectChatting/repository/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectChatting/service/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectDashBoard/controller/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectDashBoard/model/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectDashBoard/repository/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectDashBoard/service/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectFile/controller/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectFile/model/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectFile/repository/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectFile/service/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectKanbanBoard/controller/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectKanbanBoard/model/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectKanbanBoard/repository/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectKanbanBoard/service/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectList/controller/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectList/model/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectList/repository/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectList/service/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectStart/controller/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectStart/model/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectStart/repository/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectStart/service/.gitkeep" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +76,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="seongook" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -86,11 +110,17 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "Gradle.TimeVenture [:TimeVentureApplication.main()].executor": "Run",
     "JavaScript Debug.login.html.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.TimeVentureApplication.executor": "Run",
-    "git-widget-placeholder": "seongook",
+    "git-widget-placeholder": "pastelq",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/icanjava/springboot_intelliJ",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "SDKs",
@@ -105,6 +135,16 @@
       <recent name="C:\Study\SpringIntelliJ\workspace\TimeVenture\src\main\resources" />
       <recent name="C:\Study\SpringIntelliJ\workspace\TimeVenture\src\main\resources\templates\common" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="TimeVentureApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="TimeVenture.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.TimeVenture.TimeVentureApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -148,20 +188,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="top&amp;sidebar" />
     <option name="LAST_COMMIT_MESSAGE" value="top&amp;sidebar" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/TimeVenture/TimeVentureApplication.java</url>
-          <line>10</line>
-          <properties class="com.TimeVenture.TimeVentureApplication" method="main">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

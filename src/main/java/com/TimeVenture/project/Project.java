@@ -5,7 +5,7 @@ import com.TimeVenture.projectMember.ProjectMember;
 import com.TimeVenture.task.doing.DoingTask;
 import com.TimeVenture.task.done.DoneTask;
 import com.TimeVenture.task.hold.HoldTask;
-import com.TimeVenture.task.toDo.ToDoTask;
+import com.TimeVenture.task.toDo.TodoTask;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -20,7 +20,7 @@ import java.util.List;
 public class Project {
 
     @OneToMany(mappedBy = "project", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    private List<ToDoTask> toDoTasks;
+    private List<TodoTask> toDoTasks;
 
     @OneToMany(mappedBy = "project", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<DoingTask> doingTasks;

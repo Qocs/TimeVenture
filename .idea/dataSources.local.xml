@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="IU-241.15989.150">
+    <data-source name="TimeVenture@localhost" uuid="a3ed1ea1-0cce-4ffa-ac76-e7362f997f12">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" />
+      <user-name>root</user-name>
+      <schema-mapping />
+    </data-source>
+    <data-source name="TimeVenture@localhost" uuid="a3d52b77-2f78-4147-b8ad-5cce913fdebe">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" />
+      <user-name>TimeVenture</user-name>
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>

@@ -1,12 +1,13 @@
-package com.TimeVenture.task.toDo;
+package com.TimeVenture.task.todo;
 
 import com.TimeVenture.task.BaseTask;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;
+
+import java.sql.Timestamp;
 
 @Entity
 @Table(name = "Todo_Tasks")

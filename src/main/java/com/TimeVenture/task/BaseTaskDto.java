@@ -7,11 +7,11 @@ import java.sql.Timestamp;
 
 @Getter
 @Setter
-public abstract class BaseTaskDto {
+public class BaseTaskDto {
     private int tId;
     private int pId;
     private String mId;
-    private int projectMember;
+    private Integer pMember;
     private String title;
     private String content;
     private Priority priority;

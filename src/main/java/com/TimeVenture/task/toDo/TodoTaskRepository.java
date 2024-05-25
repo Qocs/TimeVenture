@@ -1,8 +1,6 @@
-package com.TimeVenture.task.toDo;
+package com.TimeVenture.task.todo;
 
 import com.TimeVenture.task.BaseTaskRepository;
-import org.springframework.stereotype.Repository;
 
-@Repository
 public interface TodoTaskRepository extends BaseTaskRepository<TodoTask, Integer> {
 }

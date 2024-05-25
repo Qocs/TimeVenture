@@ -1,4 +1,4 @@
-package com.TimeVenture.task.toDo;
+package com.TimeVenture.task.todo;
 
 import com.TimeVenture.task.BaseTaskDto;
 import lombok.Getter;

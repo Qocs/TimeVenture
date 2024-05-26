@@ -4,83 +4,97 @@
     <meta charset="UTF-8">
     <title>Review Test</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
+    <script><!-- ajax -->
+        //DOM 준비 시 실행 코드 loadReviews
         $(document).ready(function() {
             loadReviews();
 
+            // add 폼 제출 시 실행 코드
             $("#addReviewForm").submit(function (event) {
-                event.preventDefault();
+                event.preventDefault(); //기본 폼 전송 off
+                //폼 입력 받은 내용을 가져오고 댓글 추가하는 함수 호출
                 var content = $("#reviewContent").val();
                 addReview(content);
             });
-
+            // update 폼 제출 시 실행 코드
             $("#updateReviewForm").submit(function (event) {
-                event.preventDefault();
+                event.preventDefault();//기본 폼 전송 off
+                // 폼에 저장되어 있는 리뷰 ID, 컨텐츠 내용을 가져와 수정 함수 호출
                 var id = $("#updateReviewId").val();
                 var content = $("#updateReviewContent").val();
                 updateReview(id, content);
             });
         });
 
+        //전체 list View
         function loadReviews() {
             $.ajax({
-                url: "/api/reviews",
-                type: "GET",
+                url: "/api/reviews", //rest controller 엔드포인트
+                type: "GET", // GET 타입 요청
                 success: function (reviews) {
                     var tableBody = $("#reviewsTable tbody");
-                    tableBody.empty();
+                    tableBody.empty(); //테이블 초기화
+                    // each(반복)을 이용해 리뷰 목록 테이블 추가
                     $.each(reviews, function (index, review) {
                         var row = "<tr>"
                             + "<td>" + review.reviewId + "</td>"
                             + "<td>" + review.content + "</td>"
                             + "<td>" + review.createdDate + "</td>"
                             + "<td>" + review.editedDate + "</td>"
-                            + "<td>"
+                            + "<td>" //수정, 삭제 버튼이 있는 td
                             + "<button onclick='showUpdateForm(" + review.reviewId + ",\"" + review.content + "\")'>Edit</button>"
                             + "<button onclick='deleteReview(" + review.reviewId + ")'>Delete</button>"
                             + "</td>"
                             + "</tr>";
-                        tableBody.append(row);
+                        tableBody.append(row); // 생성된 레코드 테이블 바디에 추가
                     });
                 }
             });
         }
 
+        // 댓글 추가
         function addReview(content) {
             $.ajax({
-                url: "/api/reviews",
-                type: "POST",
-                contentType: "application/json",
-                data: JSON.stringify({ content: content }),
+                url: "/api/reviews", //엔드포인트
+                type: "POST", //요청방식
+                contentType: "application/json", //데이터 형식 JSON으로 설정
+                data: JSON.stringify({ content: content }), //content 내용 JSON으로 변환 및 전송
+                //요청 성공 시 리뷰 목록을 다시 불러옴
                 success: function() {
                     loadReviews();
-                    $("#reviewContent").val('');
+                    $("#reviewContent").val(''); // 폼 내용 초기화
                 }
             });
         }
 
+        // 댓글 삭제
         function deleteReview(id) {
             $.ajax({
-                url: "/api/reviews/" + id,
-                type: "DELETE",
+                url: "/api/reviews/" + id, //엔드포인트
+                type: "DELETE", //요청 방식
+                //요청 성공 시 리뷰 목록 다시 불러옴
                 success: function() {
                     loadReviews();
                 }
             });
         }
 
+        // 댓글 수정폼 출력
         function showUpdateForm(id, content) {
-            $("#updateReviewId").val(id);
-            $("#updateReviewContent").val(content);
-            $("#updateReviewModal").show();
+            //출력 후 수정 폼에 저장될 내용(보여질 내용) 세팅
+            $("#updateReviewId").val(id); //Review ID
+            $("#updateReviewContent").val(content); //content
+            $("#updateReviewModal").show(); //수정 폼을 표시
         }
 
+        // 댓글 수정
         function updateReview(id, content) {
             $.ajax({
-                url: "/api/reviews/" + id,
-                type: "PUT",
-                contentType: "application/json",
-                data: JSON.stringify({ content: content }),
+                url: "/api/reviews/" + id, //api 엔드포인트 (리뷰아이디 포함)
+                type: "PUT", //요청방식
+                contentType: "application/json", //요청 데이터 형식 JSON 으로 설정
+                data: JSON.stringify({ content: content }), //수정된 내용 JSON 형식으로 변환하여 전송
+                // 요청 성공 시 리뷰 목록 다시 불러옴(비동기) + 수정폼 show 다시 off
                 success: function() {
                     loadReviews();
                     $("#updateReviewModal").hide();

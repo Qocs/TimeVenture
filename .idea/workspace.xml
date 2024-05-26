@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ea3de82-7562-4ec6-9146-240d881ea880" name="Changes" comment="top&amp;sidebar">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/project/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectMember/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/replytest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/generated/com/TimeVenture/task/doing/DoingTaskMapperImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/generated/com/TimeVenture/task/done/DoneTaskMapperImpl.java" beforeDir="false" />
@@ -22,12 +26,12 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/BaseReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/BaseReviewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/BaseReviewDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/ReviewDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/BaseReviewRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/BaseReviewRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/BaseReviewService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/todo/TodoReview.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/todo/TodoReviewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/BaseReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/BaseReviewService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/todo/TodoReview.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/todo/TodoReview.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/todo/TodoReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/todo/TodoReviewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/todo/TodoReviewDto.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/todo/TodoReviewMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/todo/TodoReviewRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/todo/TodoReviewRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/todo/TodoReviewRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/todo/TodoReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/todo/TodoReviewService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/BaseTask.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/BaseTaskController.java" beforeDir="false" />
@@ -204,7 +208,7 @@
       <workItem from="1716538524794" duration="7876000" />
       <workItem from="1716598060415" duration="1988000" />
       <workItem from="1716604950511" duration="18067000" />
-      <workItem from="1716633544061" duration="20632000" />
+      <workItem from="1716633544061" duration="21641000" />
     </task>
     <task id="LOCAL-00001" summary="top&amp;sidebar">
       <option name="closed" value="true" />

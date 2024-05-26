@@ -5,24 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ea3de82-7562-4ec6-9146-240d881ea880" name="Changes" comment="top&amp;sidebar">
-      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/TimeVenture/TimeVentureApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/reply/BaseReply.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/BaseTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/BaseTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/BaseTaskDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/BaseTaskDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/BaseTaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/BaseTaskRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/doing/DoingTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/doing/DoingTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/doing/DoingTaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/doing/DoingTaskRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/done/DoneTaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/done/DoneTaskRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/hold/HoldTaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/hold/HoldTaskRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/toDo/ToDoTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/toDo/ToDoTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/toDo/TodoTaskDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/toDo/TodoTaskDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/toDo/TodoTaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/toDo/TodoTaskRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/generated/com/TimeVenture/task/doing/DoingTaskMapperImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/generated/com/TimeVenture/task/done/DoneTaskMapperImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/generated/com/TimeVenture/task/hold/HoldTaskMapperImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/generated/com/TimeVenture/task/todo/TodoTaskMapperImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/chat/Chat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/project/Project.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/project/ProjectController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/project/ProjectRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/project/ProjectRequestDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/project/ProjectService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectMember/Auth.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectMember/ProjectMember.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/BaseReview.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/BaseReview.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/BaseReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/BaseReviewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/BaseReviewDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/ReviewDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/BaseReviewRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/BaseReviewRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/BaseReviewService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/todo/TodoReview.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/todo/TodoReviewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/todo/TodoReviewDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/todo/TodoReviewMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/todo/TodoReviewRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/todo/TodoReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/todo/TodoReviewService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/BaseTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/BaseTaskController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/BaseTaskDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/BaseTaskRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/BaseTaskService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/Priority.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/doing/DoingTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/doing/DoingTaskController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/doing/DoingTaskDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/doing/DoingTaskMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/doing/DoingTaskRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/doing/DoingTaskService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/done/DoneTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/done/DoneTaskController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/done/DoneTaskDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/done/DoneTaskMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/done/DoneTaskRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/done/DoneTaskService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/hold/HoldTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/hold/HoldTaskController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/hold/HoldTaskDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/hold/HoldTaskMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/hold/HoldTaskRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/hold/HoldTaskService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/toDo/ToDoTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/toDo/TodoTaskController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/toDo/TodoTaskDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/toDo/TodoTaskMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/toDo/TodoTaskRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/toDo/TodoTaskService.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,8 +93,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -93,40 +129,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.TimeVentureApplication.executor&quot;: &quot;Run&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Gradle.TimeVenture [:TimeVentureApplication.main()].executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.login.html.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.TimeVentureApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;pastelq&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/icanjava/springboot_intelliJ/TimeVenture/src/main/java/com/TimeVenture/reply/doneReply&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.TimeVentureApplication.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Gradle.TimeVenture [:TimeVentureApplication.main()].executor": "Run",
+    "JavaScript Debug.login.html.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.TimeVentureApplication.executor": "Run",
+    "git-widget-placeholder": "pastelq",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/icanjava/springboot_intelliJ/TimeVenture/src/main/java/com/TimeVenture/task",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\icanjava\springboot_intelliJ\TimeVenture\src\main\java\com\TimeVenture\task" />
+      <recent name="C:\icanjava\springboot_intelliJ\TimeVenture\src\main\java\com\TimeVenture\projectMember" />
+      <recent name="C:\icanjava\springboot_intelliJ\TimeVenture\src\main\java\com\TimeVenture\project" />
       <recent name="C:\icanjava\springboot_intelliJ\TimeVenture\src\main\java\com\TimeVenture\reply\doneReply" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\icanjava\springboot_intelliJ\TimeVenture\src\main\resources\static" />
       <recent name="C:\icanjava\springboot_intelliJ" />
       <recent name="C:\Study\SpringIntelliJ\workspace\TimeVenture\src\main\resources" />
       <recent name="C:\Study\SpringIntelliJ\workspace\TimeVenture\src\main\resources\templates\common" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.TimeVenture.review" />
     </key>
   </component>
   <component name="RunManager">
@@ -160,7 +203,8 @@
       <workItem from="1716516783814" duration="9062000" />
       <workItem from="1716538524794" duration="7876000" />
       <workItem from="1716598060415" duration="1988000" />
-      <workItem from="1716604950511" duration="16176000" />
+      <workItem from="1716604950511" duration="18067000" />
+      <workItem from="1716633544061" duration="20632000" />
     </task>
     <task id="LOCAL-00001" summary="top&amp;sidebar">
       <option name="closed" value="true" />
@@ -198,5 +242,25 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="top&amp;sidebar" />
     <option name="LAST_COMMIT_MESSAGE" value="top&amp;sidebar" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/TimeVenture/review/BaseReviewController.java</url>
+          <line>34</line>
+          <properties class="com.TimeVenture.review.BaseReviewController" method="getAllReviews">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/TimeVenture/review/BaseReviewRepository.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

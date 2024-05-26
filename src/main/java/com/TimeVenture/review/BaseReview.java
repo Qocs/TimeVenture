@@ -1,15 +1,13 @@
 package com.TimeVenture.review;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.MappedSuperclass;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;
 
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 /* reply 엔티티 클래스가 상속하는 추상 클래스
 @MappedSuperclass : JPA 어노테이션, 부모클래스의 매핑 정보를 자식 엔티티 클래스들이
@@ -28,12 +26,16 @@ public class BaseReview {
     private int reviewId;
 
     //FK : 현재는 FK를 제거하고 부분 개발 중으로 FK관련 코드 제거
-    private int tId; //task 테이블 FK
-    private int mId; //member 테이블 FK
+    private int tId = 1; //task 테이블 FK 임시로 값 1 저장
 
-    //그 외 테이블 컬럼
-    private String content;        //내용
+    private int mId = 1; //member 테이블 FK 임시로 값 1 저장
+
+    private String content; //내용
+
+
+    @Column(updatable = false) // 레코드 변경 X :생성일은 이후에는 변경되지 않도록 설정
     private Timestamp createdDate; //생성일(기본값:오늘일자시간)
+
     private Timestamp editedDate;  //수정일(기본값:오늘일자시간)
 
     /* 실제 컬럼명은 스네이크케이스로 DB에 저장되었으나, JPA 쿼리 메서드에서 네이밍 규칙을
@@ -43,4 +45,17 @@ public class BaseReview {
     1. 필드명과 DB 컬럼명이 완전히 일치 = 별도 매핑 지정 필요 없음
     2. 필드명이 카멜케이스, DB 컬럼명 스네이크 케이스 = 필드명에서 스네이크케이스를 카멜케이스로 변환하여 매핑
     3. 필드명과 DB 컬럼명이 불일치 =  @Column(name = "컬럼명") 을 통해 매핑 */
+
+    @PrePersist //엔티티가 DB에 저장되기 전 호출되는 JPA 콜백 에너테이션
+    protected void onCreate(){
+        //createdDate 레코드가 없을 경우 현재 시간을 넣어줌
+        if(createdDate == null){
+            createdDate = Timestamp.valueOf(LocalDateTime.now());
+        }
+    }
+
+    @PreUpdate //엔티티가 DB에 업데이트되기 전 호출되는 JPA 콜백 에너테이션
+    protected void onUpdate() {
+        editedDate = Timestamp.valueOf(LocalDateTime.now());
+    }
 }

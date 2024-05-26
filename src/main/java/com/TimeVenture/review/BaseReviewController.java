@@ -1,7 +1,6 @@
 package com.TimeVenture.review;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -20,11 +19,33 @@ public class BaseReviewController<T extends BaseReview, S extends BaseReviewServ
     public BaseReviewController(S reviewService){
         this.reviewService = reviewService;
     }
+    //CREATE - 게시글 생성
+    @PostMapping
+    public T createReview(@RequestBody T review){
+    /* @RequestBody : HTTP 요청의 본문을 Java 객체로 변환할 때 사용
+    클라이언트가 서버로 데이터를 보낼 때(POST, PUT 등) 요청 본문을 Java 객체로 변환 */
+        review.setTId(1); //FK 설정 전으로 임시로 1 값 입력
+        review.setMId(1); //FK 설정 전으로 임시로 1 값 입력
+        return reviewService.createReview(review);
+    }
 
-    //조회
+    //READ
+    //1. 전체 글 조회
     @GetMapping
     public List<T> getAllReviews() {
         return reviewService.getAllReviews();
     }
 
+    //UPDATE - 댓글 내용 수정
+    @PutMapping("/{id}")
+    public T updateReview(@PathVariable("id") int id, @RequestBody T review) {
+        return reviewService.updateReview(id, review);
+    }
+
+    //DELETE - 댓글 삭제
+    @DeleteMapping("/{id}")
+    public void deleteReview(@PathVariable("id") int id) {
+        reviewService.deleteReview(id);
+    }
 }
+

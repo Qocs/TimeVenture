@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="kr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Review Test</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            loadReviews();
+
+            $("#addReviewForm").submit(function (event) {
+                event.preventDefault();
+                var content = $("#reviewContent").val();
+                addReview(content);
+            });
+
+            $("#updateReviewForm").submit(function (event) {
+                event.preventDefault();
+                var id = $("#updateReviewId").val();
+                var content = $("#updateReviewContent").val();
+                updateReview(id, content);
+            });
+        });
+
+        function loadReviews() {
+            $.ajax({
+                url: "/api/reviews",
+                type: "GET",
+                success: function (reviews) {
+                    var tableBody = $("#reviewsTable tbody");
+                    tableBody.empty();
+                    $.each(reviews, function (index, review) {
+                        var row = "<tr>"
+                            + "<td>" + review.reviewId + "</td>"
+                            + "<td>" + review.content + "</td>"
+                            + "<td>" + review.createdDate + "</td>"
+                            + "<td>" + review.editedDate + "</td>"
+                            + "<td>"
+                            + "<button onclick='showUpdateForm(" + review.reviewId + ",\"" + review.content + "\")'>Edit</button>"
+                            + "<button onclick='deleteReview(" + review.reviewId + ")'>Delete</button>"
+                            + "</td>"
+                            + "</tr>";
+                        tableBody.append(row);
+                    });
+                }
+            });
+        }
+
+        function addReview(content) {
+            $.ajax({
+                url: "/api/reviews",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify({ content: content }),
+                success: function() {
+                    loadReviews();
+                    $("#reviewContent").val('');
+                }
+            });
+        }
+
+        function deleteReview(id) {
+            $.ajax({
+                url: "/api/reviews/" + id,
+                type: "DELETE",
+                success: function() {
+                    loadReviews();
+                }
+            });
+        }
+
+        function showUpdateForm(id, content) {
+            $("#updateReviewId").val(id);
+            $("#updateReviewContent").val(content);
+            $("#updateReviewModal").show();
+        }
+
+        function updateReview(id, content) {
+            $.ajax({
+                url: "/api/reviews/" + id,
+                type: "PUT",
+                contentType: "application/json",
+                data: JSON.stringify({ content: content }),
+                success: function() {
+                    loadReviews();
+                    $("#updateReviewModal").hide();
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+<h1>Review List</h1>
+<form id="addReviewForm">
+    <input type="text" id="reviewContent" placeholder="입력하세요." required>
+    <button type="submit">Add Review</button>
+</form>
+<table id="reviewsTable" style="border: 1px solid black;">
+    <thead>
+    <tr>
+        <th>Review ID</th>
+        <th>Content</th>
+        <th>Created Date</th>
+        <th>Edited Date</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<!-- 수정 창 -->
+<div id="updateReviewModal" style="display: none;">
+    <h2>Update Review</h2>
+    <form id="updateReviewForm">
+        <input type="hidden" id="updateReviewId">
+        <input type="text" id="updateReviewContent" placeholder="내용을 입력하세요." required>
+        <button type="submit">Update Review</button>
+    </form>
+</div>
+
+</body>
+</html>

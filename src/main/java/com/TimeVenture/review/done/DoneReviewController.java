@@ -1,17 +1,15 @@
-package com.TimeVenture.review.todo;
+package com.TimeVenture.review.done;
 
 import com.TimeVenture.review.BaseReviewController;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
-
 //BaseReview 컨트롤러 상속받는 자식 컨트롤러 클래스
 @RestController
-@RequestMapping("/api/todo-reviews")
-public class TodoReviewController extends BaseReviewController<TodoReview, TodoReviewService> {
+@RequestMapping("/api/done-reviews")
+public class DoneReviewController extends BaseReviewController<DoneReview, DoneReviewService> {
 
-    public TodoReviewController(TodoReviewService reviewService) {
+    public DoneReviewController(DoneReviewService reviewService) {
         super(reviewService);
     }
 

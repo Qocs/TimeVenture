@@ -29,7 +29,7 @@
         //전체 list View
         function loadReviews() {
             $.ajax({
-                url: "/api/reviews", //rest controller 엔드포인트
+                url: "/api/todo-reviews", //rest controller 엔드포인트
                 type: "GET", // GET 타입 요청
                 success: function (reviews) {
                     var tableBody = $("#reviewsTable tbody");
@@ -55,7 +55,7 @@
         // 댓글 추가
         function addReview(content) {
             $.ajax({
-                url: "/api/reviews", //엔드포인트
+                url: "/api/todo-reviews", //엔드포인트
                 type: "POST", //요청방식
                 contentType: "application/json", //데이터 형식 JSON으로 설정
                 data: JSON.stringify({ content: content }), //content 내용 JSON으로 변환 및 전송
@@ -70,7 +70,7 @@
         // 댓글 삭제
         function deleteReview(id) {
             $.ajax({
-                url: "/api/reviews/" + id, //엔드포인트
+                url: "/api/todo-reviews/" + id, //엔드포인트
                 type: "DELETE", //요청 방식
                 //요청 성공 시 리뷰 목록 다시 불러옴
                 success: function() {
@@ -90,7 +90,7 @@
         // 댓글 수정
         function updateReview(id, content) {
             $.ajax({
-                url: "/api/reviews/" + id, //api 엔드포인트 (리뷰아이디 포함)
+                url: "/api/todo-reviews/" + id, //api 엔드포인트 (리뷰아이디 포함)
                 type: "PUT", //요청방식
                 contentType: "application/json", //요청 데이터 형식 JSON 으로 설정
                 data: JSON.stringify({ content: content }), //수정된 내용 JSON 형식으로 변환하여 전송

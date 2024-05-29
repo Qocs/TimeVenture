@@ -13,38 +13,39 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RequiredArgsConstructor
+@RequestMapping("/api/project")
 @RestController
 public class ProjectController {
 
     private final ProjectService projectService;
 
-    @PostMapping("/projects")
+    @PostMapping
     public ResponseEntity<Project> addProject(@RequestBody AddProjectRequestDto requestDto) {
         Project savedProject = projectService.save(requestDto);
         return ResponseEntity.status(HttpStatus.CREATED).body(savedProject);
     }
 
-    @GetMapping("/projects")
+    @GetMapping
     public ResponseEntity<List<ResponseProjectDto>> findAllProjects() {
         List<ResponseProjectDto> projects = projectService.findAll().stream().map(ResponseProjectDto::new).toList();
         return ResponseEntity.ok().body(projects);
     }
 
-    @GetMapping("/projects/{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<ResponseProjectDto> findOneProject(@PathVariable Long id) {
         Project project = projectService.findById(id);
 
         return ResponseEntity.ok().body(new ResponseProjectDto(project));
     }
 
-    @DeleteMapping("/projects/{id}")
+    @DeleteMapping("/{id}")
     public ResponseEntity<ResponseProjectDto> deleteProject(@PathVariable Long id) {
         projectService.delete(id);
 
         return ResponseEntity.ok().build();
     }
 
-    @PutMapping("/projects/{id}")
+    @PutMapping("/{id}")
     public ResponseEntity<Project> updateProject(@PathVariable Long id, @RequestBody UpdateProjectDto request) {
         Project updatedProject = projectService.update(id, request);
 

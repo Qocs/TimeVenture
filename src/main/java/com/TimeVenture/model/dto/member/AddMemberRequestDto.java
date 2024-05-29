@@ -1,6 +1,7 @@
 package com.TimeVenture.model.dto.member;
 
 import com.TimeVenture.model.entity.member.Member;
+import com.TimeVenture.model.enums.Role;
 import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,14 +13,10 @@ import java.sql.Timestamp;
 public class AddMemberRequestDto {
     private String email;
     private String name;
+    private String pwd;
     private String img;
-    private Timestamp regDate;
+    private String loginType;
+    private String refreshToken;
+    private Role role;
 
-    public Member toEntity() {
-        return Member.builder()
-                .email(email)
-                .name(name)
-                .img(img)
-                .build();
     }
-}

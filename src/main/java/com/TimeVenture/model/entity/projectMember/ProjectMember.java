@@ -32,5 +32,8 @@ public class ProjectMember {
     @JsonManagedReference
     private Member member;
 
+    public void setAuth(Auth auth) {
+        this.auth = auth;
+    }
 
 }

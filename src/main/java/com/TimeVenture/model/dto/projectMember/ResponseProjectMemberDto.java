@@ -1,5 +1,6 @@
 package com.TimeVenture.model.dto.projectMember;
 
+import com.TimeVenture.model.entity.projectMember.ProjectMember;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -11,4 +12,11 @@ public class ResponseProjectMemberDto {
     private Long projectId;
     private String memberId;
     private String auth;
-}
+
+ public ResponseProjectMemberDto(ProjectMember projectMember) {
+     this.projectMemberId = projectMember.getProjectMemberId();
+     this.projectId = projectMember.getProject().getPid();
+     this.memberId = projectMember.getMember().getEmail();
+     this.auth = projectMember.getAuth().toString();
+ }
+    }

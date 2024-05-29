@@ -1,8 +1,9 @@
 package com.TimeVenture.model.dto.task;
 
+import com.TimeVenture.model.entity.project.Project;
 import com.TimeVenture.model.entity.task.Task;
-import com.TimeVenture.model.enums.Priority;
-import com.TimeVenture.model.enums.TaskStatus;
+import com.TimeVenture.task.model.enums.Priority;
+import com.TimeVenture.task.model.enums.TaskStatus;
 import lombok.Getter;
 
 import java.sql.Timestamp;
@@ -10,7 +11,7 @@ import java.sql.Timestamp;
 @Getter
 public class ResponseTaskDto {
     private int tid;
-    private int pid;
+    private Project pid;
     private String mid;
     private Integer pmember;
     private String title;
@@ -23,7 +24,7 @@ public class ResponseTaskDto {
 
     public ResponseTaskDto(Task task) {
         this.tid = task.getTid();
-        this.pid = task.getPid();
+        this.pid = task.getProject();
         this.mid = task.getMid();
         this.pmember = task.getPmember();
         this.title = task.getTitle();

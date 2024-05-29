@@ -62,6 +62,7 @@ public class Member implements UserDetails {
         this.loginType = loginType;
         this.refreshToken = refreshToken;
         this.role = role != null ? role : Role.USER; // 기본 역할을 USER로 설정
+        this.regDate = new Timestamp(System.currentTimeMillis());
     }
 
     @Override
@@ -108,5 +109,9 @@ public class Member implements UserDetails {
         this.img = img;
         this.refreshToken = refreshToken;
         return this;
+    }
+
+    public void setRegDate(@NotNull Timestamp regDate) {
+        this.regDate = regDate;
     }
 }

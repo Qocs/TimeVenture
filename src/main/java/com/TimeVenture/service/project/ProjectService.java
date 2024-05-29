@@ -16,6 +16,7 @@ public class ProjectService {
 
     private final ProjecetRepository projecetRepository;
 
+    @Transactional
     public Project save(AddProjectRequestDto addProjectRequestDto) {
         return projecetRepository.save(addProjectRequestDto.toEntity());
     }

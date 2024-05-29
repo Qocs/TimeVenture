@@ -17,11 +17,11 @@ import java.util.List;
 @Table(name = "Projects")
 public class Project {
 
-    @OneToMany(mappedBy = "project", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "projects", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<ProjectMember> projectMembers;
 
-    @OneToMany(mappedBy = "pid", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    private List<Task> task;
+    @OneToMany(mappedBy = "projects", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private List<Task> Tasks;
 
 
 

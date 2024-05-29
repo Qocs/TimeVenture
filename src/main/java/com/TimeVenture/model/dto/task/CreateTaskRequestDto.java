@@ -1,7 +1,7 @@
 package com.TimeVenture.model.dto.task;
 
-import com.TimeVenture.model.enums.Priority;
-import com.TimeVenture.model.enums.TaskStatus;
+import com.TimeVenture.task.model.enums.Priority;
+import com.TimeVenture.task.model.enums.TaskStatus;
 import lombok.Getter;
 import lombok.Setter;
 

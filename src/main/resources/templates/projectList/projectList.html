@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
           integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <style>
         .toggle-icon.closed {
             background-image: url('/static/image/common/righttriangle.png');
@@ -208,5 +212,29 @@
     </div>
 </div>
 <script src="js/project/projectList.js"></script>
+<script th:inline="javascript">
+    new Vue({
+        el: '#app',
+        data: {
+            tasks: [],
+            pid: 1,
+            mid: 'stark98'
+        },
+        created() {
+            this.getTasks();
+        },
+        methods: {
+            getTasks() {
+                axios.get(`/tasks/project/${this.pid}`)
+                    .then(response => {
+                        this.tasks = response.data.filter(task => task.mid === this.mid);
+                    })
+                    .catch(error => {
+                        console.log(error);
+                    });
+            }
+        }
+    });
+</script>
 </body>
 </html>

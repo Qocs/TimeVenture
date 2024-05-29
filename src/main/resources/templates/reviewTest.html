@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>작업 목록 및 댓글</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .task {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        #slide-panel {
+            position: fixed;
+            top: 0;
+            right: -400px;
+            width: 400px;
+            height: 100%;
+            background: #f1f1f1;
+            border-left: 1px solid #ddd;
+            box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+            transition: right 0.3s ease;
+        }
+        #slide-panel.open {
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+<h1>작업 목록</h1>
+<div id="task-list">
+    <div class="task" data-task-id="1">작업 1</div>
+    <div class="task" data-task-id="2">작업 2</div>
+    <div class="task" data-task-id="3">작업 3</div>
+</div>
+
+<!-- 슬라이드 패널 -->
+<div id="slide-panel">
+    <h2>댓글</h2>
+    <div id="review-list">
+        <!-- 댓글 리스트가 여기 표시됩니다 -->
+    </div>
+    <h2>댓글 추가</h2>
+    <form id="review-form">
+        <textarea id="content" name="content" placeholder="리뷰작성" required></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>댓글 수정</h2>
+    <form id="edit-review-form" style="display:none;">
+        <input type="hidden" id="edit-review-id">
+        <textarea id="edit-content" name="content" placeholder="Edit your review here..." required></textarea><br>
+        <button type="submit">Update</button>
+    </form>
+</div>
+
+<script>
+    $(document).ready(function() {
+        // 작업 클릭 이벤트
+        $('.task').on('click', function() {
+            var taskId = $(this).data('task-id'); // 클릭한 작업의 ID 가져오기
+            loadReviews(taskId); // 해당 작업의 댓글 로드
+            $('#slide-panel').addClass('open'); // 슬라이드 패널 열기
+        });
+
+        // 댓글 목록을 로드하는 함수
+        function loadReviews(taskId) {
+            $.ajax({
+                url: '/api/reviews/' + taskId, // 해당 task의 댓글 목록을 가져옴
+                type: 'GET',
+                success: function(reviews) {
+                    $('#review-list').empty(); // 기존 댓글 목록을 비움
+                    reviews.forEach(function(review) {
+                        // 각 댓글을 HTML로 추가
+                        $('#review-list').append(
+                            '<div class="review" data-id="' + review.reviewId + '">' +
+                            '<p>' + review.content + '</p>' +
+                            '<small>Posted on: ' + review.createdDate + '</small>' +
+                            '<div class="review-actions">' +
+                            '<button class="edit-review">Edit</button>' +
+                            '<button class="delete-review">Delete</button>' +
+                            '</div>' +
+                            '</div>'
+                        );
+                    });
+                }
+            });
+        }
+
+        // 댓글 추가 폼 제출 이벤트 처리
+        $('#review-form').on('submit', function(e) {
+            e.preventDefault(); // 폼의 기본 제출 동작을 막음
+            var reviewData = {
+                content: $('#content').val(), // 폼에서 입력한 댓글 내용
+                taskId: $('.task.active').data('task-id') // 현재 작업의 ID
+            };
+
+            $.ajax({
+                url: '/api/reviews', // 댓글 추가 엔드포인트
+                type: 'POST',
+                contentType: 'application/json', // JSON 형식으로 데이터 전송
+                data: JSON.stringify(reviewData), // 데이터를 JSON 문자열로 변환하여 전송
+                success: function(newReview) {
+                    // 새로운 댓글을 HTML로 추가
+                    $('#review-list').append(
+                        '<div class="review" data-id="' + newReview.reviewId + '">' +
+                        '<p>' + newReview.content + '</p>' +
+                        '<small>Posted on: ' + newReview.createdDate + '</small>' +
+                        '<div class="review-actions">' +
+                        '<button class="edit-review">Edit</button>' +
+                        '<button class="delete-review">Delete</button>' +
+                        '</div>' +
+                        '</div>'
+                    );
+                    $('#review-form')[0].reset(); // 폼 초기화
+                }
+            });
+        });
+
+        // 댓글 수정 버튼 클릭 이벤트 처리
+        $('#review-list').on('click', '.edit-review', function() {
+            var reviewId = $(this).closest('.review').data('id'); // 수정할 댓글의 ID 가져오기
+            var content = $(this).closest('.review').find('p').text(); // 댓글 내용 가져오기
+            $('#edit-review-id').val(reviewId); // 수정 폼에 댓글 ID 설정
+            $('#edit-content').val(content); // 수정 폼에 댓글 내용 설정
+            $('#edit-review-form').show(); // 수정 폼 표시
+        });
+
+        // 댓글 수정 폼 제출 이벤트 처리
+        $('#edit-review-form').on('submit', function(e) {
+            e.preventDefault(); // 폼의 기본 제출 동작을 막음
+            var reviewId = $('#edit-review-id').val(); // 수정할 댓글의 ID
+            var reviewData = {
+                content: $('#edit-content').val() // 수정된 댓글 내용
+            };
+
+            $.ajax({
+                url: '/api/reviews/' + reviewId, // 댓글 수정 엔드포인트
+                type: 'PUT',
+                contentType: 'application/json', // JSON 형식으로 데이터 전송
+                data: JSON.stringify(reviewData), // 데이터를 JSON 문자열로 변환하여 전송
+                success: function(updatedReview) {
+                    // 수정된 댓글 내용 업데이트
+                    var reviewDiv = $('div[data-id="' + reviewId + '"]');
+                    reviewDiv.find('p').text(updatedReview.content);
+                    $('#edit-review-form').hide(); // 수정 폼 숨기기
+                }
+            });
+        });
+
+        // 댓글 삭제 버튼 클릭 이벤트 처리
+        $('#review-list').on('click', '.delete-review', function() {
+            var reviewId = $(this).closest('.review').data('id'); // 삭제할 댓글의 ID 가져오기
+
+            $.ajax({
+                url: '/api/reviews/' + reviewId, // 댓글 삭제 엔드포인트
+                type: 'DELETE',
+                success: function() {
+                    $('div[data-id="' + reviewId + '"]').remove(); // 댓글 요소를 삭제
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>

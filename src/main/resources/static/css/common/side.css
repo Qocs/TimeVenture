@@ -22,6 +22,12 @@
     height: calc(100vh - 60px);
     background-color: #e1e1e1;
     z-index: 999;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.side.show {
+    transform: translateX(0);
 }
 
 .side-upper {

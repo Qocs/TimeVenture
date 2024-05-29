@@ -1,42 +1,38 @@
-/* 전체 칸반 보드를 감싸는 컨테이너 */
+/* kanbanBoardList.css */
 .kanban_board {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
-    background-color: #F9F8F8; /* 배경색 설정 */
-    width:100%;
-    height:100%;
+    background-color: #F9F8F8;
+    width: 100%;
+    height: 100%;
 }
 
-/* 각 열(Column)을 나타내는 요소 */
 .kanban_column {
-    background-color: #F9F8F8; /* 배경색 설정 */
-    padding: 10px; /* 안쪽 여백 설정 */
-    border-radius: 10px; /* 테두리 반경 설정 */
-    font-size: 14px; /* 글꼴 크기 설정 */
-    color: black; /* 글자 색상 설정 */
-    min-height: 600px; /* 최소 높이 설정 */
+    background-color: #F9F8F8;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: black;
+    min-height: 600px;
     min-width: 300px;
 }
 
-/* 작업 목록(Task List)을 나타내는 요소 */
 .kanban_task-list {
-    min-height: 200px; /* 최소 높이 설정 */
+    min-height: 200px;
     min-width: 200px;
-    border: 1px solid #ddd; /* 테두리 설정 */
-    border-radius: 5px; /* 테두리 반경 설정 */
-    margin-top: 10px; /* 위쪽 여백 설정 */
-    overflow: auto; /* 콘텐츠가 넘칠 경우 스크롤 가능 */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow: auto;
 }
 
-/* 작업(Task)을 나타내는 요소 */
 .kanban_task {
-    background-color: #ffffff; /* 배경색 설정 */
-    padding: 10px; /* 안쪽 여백 설정 */
-    border: 1px solid #F1F0EF; /* 테두리 설정 */
-    border-radius: 10px; /* 테두리 반경 설정 */
-    margin-bottom: 10px; /* 아래쪽 여백 설정 */
-    cursor: pointer; /* 커서 모양 설정 */
-    color:black;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #F1F0EF;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: black;
 }
-

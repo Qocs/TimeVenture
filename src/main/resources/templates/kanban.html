@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Management</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<h1>Task Management</h1>
+
+<!-- Create Task Form -->
+<h2>Create Task</h2>
+<form id="createTaskForm">
+  <label for="title">Title:</label>
+  <input type="text" id="title" name="title" required><br><br>
+
+  <label for="content">Content:</label><br>
+  <textarea id="content" name="content" required></textarea><br><br>
+
+  <label for="dueDate">Due Date:</label>
+  <input type="datetime-local" id="dueDate" name="dueDate" required><br><br>
+
+  <label for="priority">Priority:</label>
+  <select id="priority" name="priority" required>
+    <option value="LOW">Low</option>
+    <option value="MEDIUM">Medium</option>
+    <option value="HIGH">High</option>
+  </select><br><br>
+
+  <button type="submit">Create Task</button>
+</form>
+
+<hr>
+
+<!-- Display Tasks -->
+<h2>All Tasks</h2>
+<ul id="taskList"></ul>
+
+<script>
+  // Function to fetch tasks from the server
+  function fetchTasks() {
+      $.getJSON('/tasks', function(tasks) {
+          const taskList = $('#taskList');
+          taskList.empty(); // Clear previous tasks
+          $.each(tasks, function(index, task) {
+              const li = $('<li>').text(`${task.title} (${task.content}) - Due: ${new Date(task.dueDate).toLocaleString()} - Priority: ${task.priority}`);
+              taskList.append(li);
+          });
+      }).fail(function(jqXHR, textStatus, errorThrown) {
+          console.error('Error fetching tasks:', errorThrown);
+      });
+  }
+
+  // Function to submit task creation form
+  $('#createTaskForm').submit(function(event) {
+      event.preventDefault(); // Prevent form submission
+
+      const taskData = $(this).serializeArray();
+      taskData.push({ name: 'pid', value: 1 }); // Set pid to 1
+      taskData.push({ name: 'mid', value: 'stark98' }); // Set mid to "stark98"
+
+      $.post('/tasks', taskData)
+          .done(function() {
+              console.log('Task created successfully');
+              fetchTasks(); // Fetch tasks again to update the list
+          })
+          .fail(function(jqXHR, textStatus, errorThrown) {
+              console.error('Error creating task:', errorThrown);
+          });
+  });
+
+  // Fetch tasks when the page loads
+  fetchTasks();
+</script>
+</body>
+</html>

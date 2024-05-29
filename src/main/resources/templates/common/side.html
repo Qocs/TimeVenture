@@ -6,12 +6,13 @@
     <link rel="stylesheet" th:href="@{/css/common/side.css}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');</style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 <div th:fragment="side" class="side common-side">
     <div class="side-upper common-side">
         <div class="side-menu">
-            <div class="side-menu-item" data-target="/home">
+            <div class="side-menu-item" data-target="/home" id="homeButton">
                 <span class="menu-icon">
                     <i class="fa-solid fa-house"></i>
                 </span>
@@ -36,23 +37,13 @@
             <div class="section-title">
                 <span class="section-text">즐겨찾기</span>
             </div>
-            <div class="section-content" data-target="/project">
-                <span class="section-icon">
-                    <i class="fa-regular fa-folder"></i>
-                </span>
-                <span class="section-text">프로젝트명</span>
-            </div>
+            <div id="favorite-project-list"></div>
         </div>
         <div class="side-section">
             <div class="section-title">
                 <span class="section-text">프로젝트</span>
             </div>
-            <div class="section-content" data-target="/project">
-                <span class="section-icon">
-                    <i class="fa-regular fa-folder"></i>
-                </span>
-                <span class="section-text">프로젝트명</span>
-            </div>
+            <div id="project-list"></div>
         </div>
     </div>
 </div>

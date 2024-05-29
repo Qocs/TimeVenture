@@ -392,187 +392,187 @@
     </style>
 </head>
 <body>
-    <div class="detail-container">
-        <!-- Header -->
-        <div class="detail-header">
-            <span></span> <!-- 빈 span으로 중앙 정렬 조정 -->
-            <button class="detail-header-btn">
-                <i class="fas fa-check"></i> 완료로 표시
-            </button>
-            <button class="detail-header-closebtn"><i class="fas fa-times"></i></button>
-        </div>
-        
-        <!-- Info Section -->
-        <div class="detail-info">
-            <i class="fas fa-lock"></i>
-            <p>이 작업은 협업 참여자 및 내 작업 공간의 멤버에 표시됩니다.</p>
-        </div>
+<div class="detail-container">
+    <!-- Header -->
+    <div class="detail-header">
+        <span></span> <!-- 빈 span으로 중앙 정렬 조정 -->
+        <button class="detail-header-btn">
+            <i class="fas fa-check"></i> 완료로 표시
+        </button>
+        <button class="detail-header-closebtn"><i class="fas fa-times"></i></button>
+    </div>
 
-        <!-- Settings and Reply Section -->
-        <div class="detail-content">
-            <!-- Settings Section -->
-            <div class="detail-settings">
-                <!-- 담당자 파트 -->
-                <div class="detail-settings-item">
-                    <label for="manager">담당자</label>
-                    <div class="detail-settings-item-input detail-settings-item-center">
-                        <img src="https://via.placeholder.com/30" alt="프로필 사진" class="profile-image">
-                        <input type="text" id="manager" placeholder="이름">
-                    </div>
-                </div>
-                <!-- 마감일 파트 -->
-                <div class="detail-settings-item">
-                    <label for="deadline">마감일</label>
-                    <div class="detail-settings-item-input">
-                        <i class="fas fa-calendar"></i>
-                        <input type="date" id="deadline">
-                    </div>
-                </div>
-                <!-- 프로젝트 파트 -->
-                <div class="detail-settings-item">
-                    <label for="project">프로젝트</label>
-                    <div class="detail-settings-item-input detail-settings-item-center">
-                        <div class="project">
-                            <div class="project-color" style="background-color: #d1a4ff;"></div>
-                            <span>프로젝트 이름_01</span>
-                            <div class="project-status">
-                                <span>TO DO</span>
-                                <i class="fas fa-pen"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="detail-settings-item" style="border: none;">
-                    <label></label>
-                    <div class="detail-settings-item-addproject">+ 프로젝트 추가</div>
-                </div>
-                <!-- 필터 파트 -->
-                <div class="detail-settings-item">
-                    <label for="priority">필터</label>
-                    <div class="detail-settings-item-input detail-settings-item-center">
-                        <i class="fas fa-check"></i>
-                        <span>우선순위</span>
-                        <select id="priority">
-                            <option value="low">낮음</option>
-                            <option value="medium">중간</option>
-                            <option value="high">높음</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="detail-settings-item" style="border: none;">
-                    <label></label>
-                    <div class="detail-settings-item-input detail-settings-item-center">
-                        <i class="fas fa-check"></i>
-                        <span>상태</span>
-                        <select id="status">
-                            <option value="todo">계획</option>
-                            <option value="inprogress">진행 중</option>
-                            <option value="done">완료</option>
-                        </select>
-                    </div>
-                </div>
-                <!-- 설명 파트 -->
-                <div class="detail-settings-item">
-                    <label for="description">설명</label>
-                    <div class="detail-settings-item-input detail-description">
-                        <i class="fas fa-align-left"></i>
-                        <textarea id="description"></textarea>
-                    </div>
-                </div>
-                <!-- 변경하기 버튼 -->
-                <div class="detail-footer">
-                    <button type="button">변경하기</button>
+    <!-- Info Section -->
+    <div class="detail-info">
+        <i class="fas fa-lock"></i>
+        <p>이 작업은 협업 참여자 및 내 작업 공간의 멤버에 표시됩니다.</p>
+    </div>
+
+    <!-- Settings and Reply Section -->
+    <div class="detail-content">
+        <!-- Settings Section -->
+        <div class="detail-settings">
+            <!-- 담당자 파트 -->
+            <div class="detail-settings-item">
+                <label for="manager">담당자</label>
+                <div class="detail-settings-item-input detail-settings-item-center">
+                    <img src="https://via.placeholder.com/30" alt="프로필 사진" class="profile-image">
+                    <input type="text" id="manager" placeholder="이름">
                 </div>
             </div>
-
-            <!-- 댓글 섹션 -->
-            <div class="detail-reply-section">
-                <!-- 댓글 예시 1 -->
-                <div class="detail-reply">
-                    <img src="https://via.placeholder.com/40" alt="프로필 사진">
-                    <div class="detail-reply-content">
-                        <div class="detail-reply-header">
-                            <div>
-                                <span class="detail-reply-user">사용자1</span>
-                                <span class="detail-reply-date">2024.05.15 17:00</span>
-                            </div>
-                            <div class="detail-reply-actions">
-                                <i class="fas fa-edit"></i>
-                                <i class="fas fa-trash-alt"></i>
-                            </div>
-                        </div>
-                        <div class="detail-reply-body">
-                            님이 작업을 시작하였습니다.
-                        </div>
-                    </div>
+            <!-- 마감일 파트 -->
+            <div class="detail-settings-item">
+                <label for="deadline">마감일</label>
+                <div class="detail-settings-item-input">
+                    <i class="fas fa-calendar"></i>
+                    <input type="date" id="deadline">
                 </div>
-                <!-- 댓글 예시 2 -->
-                <div class="detail-reply">
-                    <img src="https://via.placeholder.com/40" alt="프로필 사진">
-                    <div class="detail-reply-content">
-                        <div class="detail-reply-header">
-                            <div>
-                                <span class="detail-reply-user">사용자2</span>
-                                <span class="detail-reply-date">2024.05.15 17:00</span>
-                            </div>
-                            <div class="detail-reply-actions">
-                                <i class="fas fa-edit"></i>
-                                <i class="fas fa-trash-alt"></i>
-                            </div>
-                        </div>
-                        <div class="detail-reply-body">
-                            안녕하세요!
-                        </div>
-                    </div>
-                </div>
-                <!-- 댓글 예시 3 -->
-                <div class="detail-reply">
-                    <img src="https://via.placeholder.com/40" alt="프로필 사진">
-                    <div class="detail-reply-content">
-                        <div class="detail-reply-header">
-                            <div>
-                                <span class="detail-reply-user">사용자3</span>
-                                <span class="detail-reply-date">2024.05.15 17:00</span>
-                            </div>
-                            <div class="detail-reply-actions">
-                                <i class="fas fa-edit"></i>
-                                <i class="fas fa-trash-alt"></i>
-                            </div>
-                        </div>
-                        <div class="detail-reply-body">
-                            님이 파일을 첨부하였습니다.
-                        </div>
-                        <!-- 파일 첨부 -->
-                        <div class="detail-reply-attachment">
-                            <img src="https://via.placeholder.com/50" alt="첨부 파일">
-                            <div class="file-info">
-                                <span class="file-name">파일 이름.zip</span>
-                                <span class="file-type">ZIP 파일 | 다운로드</span>
-                            </div>
+            </div>
+            <!-- 프로젝트 파트 -->
+            <div class="detail-settings-item">
+                <label for="project">프로젝트</label>
+                <div class="detail-settings-item-input detail-settings-item-center">
+                    <div class="project">
+                        <div class="project-color" style="background-color: #d1a4ff;"></div>
+                        <span>프로젝트 이름_01</span>
+                        <div class="project-status">
+                            <span>TO DO</span>
+                            <i class="fas fa-pen"></i>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="detail-settings-item" style="border: none;">
+                <label></label>
+                <div class="detail-settings-item-addproject">+ 프로젝트 추가</div>
+            </div>
+            <!-- 필터 파트 -->
+            <div class="detail-settings-item">
+                <label for="priority">필터</label>
+                <div class="detail-settings-item-input detail-settings-item-center">
+                    <i class="fas fa-check"></i>
+                    <span>우선순위</span>
+                    <select id="priority">
+                        <option value="low">낮음</option>
+                        <option value="medium">중간</option>
+                        <option value="high">높음</option>
+                    </select>
+                </div>
+            </div>
+            <div class="detail-settings-item" style="border: none;">
+                <label></label>
+                <div class="detail-settings-item-input detail-settings-item-center">
+                    <i class="fas fa-check"></i>
+                    <span>상태</span>
+                    <select id="status">
+                        <option value="todo">계획</option>
+                        <option value="inprogress">진행 중</option>
+                        <option value="done">완료</option>
+                    </select>
+                </div>
+            </div>
+            <!-- 설명 파트 -->
+            <div class="detail-settings-item">
+                <label for="description">설명</label>
+                <div class="detail-settings-item-input detail-description">
+                    <i class="fas fa-align-left"></i>
+                    <textarea id="description"></textarea>
+                </div>
+            </div>
+            <!-- 변경하기 버튼 -->
+            <div class="detail-footer">
+                <button type="button">변경하기</button>
+            </div>
         </div>
-        
-        <!-- 댓글 작성 섹션 -->
-        <div class="detail-replysend">
-            <div class="detail-replysend-input">
+
+        <!-- 댓글 섹션 -->
+        <div class="detail-reply-section">
+            <!-- 댓글 예시 1 -->
+            <div class="detail-reply">
                 <img src="https://via.placeholder.com/40" alt="프로필 사진">
-                <textarea placeholder="댓글을 추가해 주세요!"></textarea>
-                <button type="button">
-                    <i class="fas fa-paper-plane"></i>
-                </button>
+                <div class="detail-reply-content">
+                    <div class="detail-reply-header">
+                        <div>
+                            <span class="detail-reply-user">사용자1</span>
+                            <span class="detail-reply-date">2024.05.15 17:00</span>
+                        </div>
+                        <div class="detail-reply-actions">
+                            <i class="fas fa-edit"></i>
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                    </div>
+                    <div class="detail-reply-body">
+                        님이 작업을 시작하였습니다.
+                    </div>
+                </div>
             </div>
-            <div class="detail-replysend-actions">
-                <button type="button">
-                    <i class="fas fa-paperclip"></i> 파일 첨부
-                </button>
-                <button type="button">
-                    <i class="fas fa-sign-out-alt"></i> 작업 나가기
-                </button>
+            <!-- 댓글 예시 2 -->
+            <div class="detail-reply">
+                <img src="https://via.placeholder.com/40" alt="프로필 사진">
+                <div class="detail-reply-content">
+                    <div class="detail-reply-header">
+                        <div>
+                            <span class="detail-reply-user">사용자2</span>
+                            <span class="detail-reply-date">2024.05.15 17:00</span>
+                        </div>
+                        <div class="detail-reply-actions">
+                            <i class="fas fa-edit"></i>
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                    </div>
+                    <div class="detail-reply-body">
+                        안녕하세요!
+                    </div>
+                </div>
+            </div>
+            <!-- 댓글 예시 3 -->
+            <div class="detail-reply">
+                <img src="https://via.placeholder.com/40" alt="프로필 사진">
+                <div class="detail-reply-content">
+                    <div class="detail-reply-header">
+                        <div>
+                            <span class="detail-reply-user">사용자3</span>
+                            <span class="detail-reply-date">2024.05.15 17:00</span>
+                        </div>
+                        <div class="detail-reply-actions">
+                            <i class="fas fa-edit"></i>
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                    </div>
+                    <div class="detail-reply-body">
+                        님이 파일을 첨부하였습니다.
+                    </div>
+                    <!-- 파일 첨부 -->
+                    <div class="detail-reply-attachment">
+                        <img src="https://via.placeholder.com/50" alt="첨부 파일">
+                        <div class="file-info">
+                            <span class="file-name">파일 이름.zip</span>
+                            <span class="file-type">ZIP 파일 | 다운로드</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- 댓글 작성 섹션 -->
+    <div class="detail-replysend">
+        <div class="detail-replysend-input">
+            <img src="https://via.placeholder.com/40" alt="프로필 사진">
+            <textarea placeholder="댓글을 추가해 주세요!"></textarea>
+            <button type="button">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+        <div class="detail-replysend-actions">
+            <button type="button">
+                <i class="fas fa-paperclip"></i> 파일 첨부
+            </button>
+            <button type="button">
+                <i class="fas fa-sign-out-alt"></i> 작업 나가기
+            </button>
+        </div>
+    </div>
+</div>
 </body>
 </html>

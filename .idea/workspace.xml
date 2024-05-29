@@ -5,7 +5,98 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ea3de82-7562-4ec6-9146-240d881ea880" name="Changes" comment="top&amp;sidebar">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/24__5__20___2_45_________Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/24__5__20__오후_2_45,_체크아웃_전에_커밋되지_않은_변경_내용_[Changes]/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/24__5__20__오후_2_45,_체크아웃_전에_커밋되지_않은_변경_내용_[Changes]/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/24__5__20__오후_2_45,_체크아웃_전에_커밋되지_않은_변경_내용_[Changes]/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/24__5__20__오후_2_45,_체크아웃_전에_커밋되지_않은_변경_내용_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-05-20__3_13__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-05-20__3_22__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-05-20_오후_3_13_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-05-20_오후_3_22_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_______Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/리베이스_전에_커밋되지_않은_변경_내용_[Changes]/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/리베이스_전에_커밋되지_않은_변경_내용_[Changes]/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/리베이스_전에_커밋되지_않은_변경_내용_[Changes]/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/리베이스_전에_커밋되지_않은_변경_내용_[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/common/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/project/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/image/project/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/common/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/member/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/projectKanbanBoard/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/TimeVentureApplication.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/common/navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/common/navigation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/common/side.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/common/side.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/css/project/kanbanBoardList.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/css/project/kanbanBoardList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/js/common/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/js/common/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/js/project/kanbanBoardList.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/js/project/kanbanBoardList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/common/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/common/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/common/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/common/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/common/navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/common/navigation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/common/project.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/common/project.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/common/side.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/common/side.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/common/top.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/common/top.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/projectHome/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/projectHome/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/projectKanbanBoard/kanbanBoardList.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/projectKanbanBoard/kanbanBoardList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/TimeVentureApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/attachment/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/member/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/payment/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/project/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/projectMember/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/BaseReview.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/BaseReviewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/BaseReviewRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/BaseReviewService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/ReviewDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/doing/DoingReview.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/doing/DoingReviewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/doing/DoingReviewRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/doing/DoingReviewService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/done/DoneReview.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/done/DoneReviewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/done/DoneReviewRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/done/DoneReviewService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/hold/HoldReview.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/hold/HoldReviewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/hold/HoldReviewRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/hold/HoldReviewService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/todo/TodoReview.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/todo/TodoReviewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/todo/TodoReviewRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/review/todo/TodoReviewService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/task/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/common/navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/common/navigation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/common/side.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/common/side.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/project/kanbanBoardList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/project/kanbanBoardList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/common/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/project/kanbanBoardList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/project/kanbanBoardList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/replytest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common/navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common/navigation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common/project.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common/project.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common/side.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common/side.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common/top.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common/top.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/projectHome/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/projectHome/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/projectKanbanBoard/kanbanBoardList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/projectKanbanBoard/kanbanBoardList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/TimeVenture/TimeVentureApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +114,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -40,8 +134,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -76,32 +170,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.TimeVentureApplication.executor": "Run",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Gradle.TimeVenture [:TimeVentureApplication.main()].executor": "Run",
-    "JavaScript Debug.login.html.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.TimeVentureApplication.executor": "Run",
-    "git-widget-placeholder": "pastelq",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/icanjava/springboot_intelliJ/TimeVenture/src/main/java/com/TimeVenture/projectMember",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.TimeVentureApplication.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Gradle.Build TimeVenture.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TimeVenture [:TimeVentureApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.login.html.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.TimeVentureApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;pastelq&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/icanjava/springboot_intelliJ/TimeVenture/src/main/java/com/TimeVenture/projectMember&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\icanjava\springboot_intelliJ\TimeVenture\src\main\java\com\TimeVenture\projectMember" />
@@ -111,13 +209,18 @@
       <recent name="C:\icanjava\springboot_intelliJ\TimeVenture\src\main\java\com\TimeVenture\reply\doneReply" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\icanjava\springboot_intelliJ\TimeVenture\src\main\resources\templates" />
+      <recent name="C:\icanjava\springboot_intelliJ\TimeVenture\src\main\java\com" />
+      <recent name="C:\icanjava\springboot_intelliJ\TimeVenture\src\main\java\com\TimeVenture\task" />
       <recent name="C:\icanjava\springboot_intelliJ\TimeVenture\src\main\resources\static" />
       <recent name="C:\icanjava\springboot_intelliJ" />
-      <recent name="C:\Study\SpringIntelliJ\workspace\TimeVenture\src\main\resources" />
-      <recent name="C:\Study\SpringIntelliJ\workspace\TimeVenture\src\main\resources\templates\common" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.TimeVenture.review" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.TimeVenture.model.dto.review" />
+      <recent name="com.TimeVenture.model.entity.review" />
     </key>
   </component>
   <component name="RunManager">
@@ -152,7 +255,18 @@
       <workItem from="1716538524794" duration="7876000" />
       <workItem from="1716598060415" duration="1988000" />
       <workItem from="1716604950511" duration="18067000" />
-      <workItem from="1716633544061" duration="22385000" />
+      <workItem from="1716633544061" duration="24125000" />
+      <workItem from="1716768729156" duration="13336000" />
+      <workItem from="1716786349892" duration="21622000" />
+      <workItem from="1716812348357" duration="361000" />
+      <workItem from="1716812723905" duration="729000" />
+      <workItem from="1716813543870" duration="581000" />
+      <workItem from="1716820585131" duration="2340000" />
+      <workItem from="1716822960565" duration="3048000" />
+      <workItem from="1716941726727" duration="1323000" />
+      <workItem from="1716943066274" duration="10770000" />
+      <workItem from="1716959568390" duration="2495000" />
+      <workItem from="1716963479215" duration="9270000" />
     </task>
     <task id="LOCAL-00001" summary="top&amp;sidebar">
       <option name="closed" value="true" />
@@ -197,7 +311,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/TimeVenture/review/BaseReviewController.java</url>
           <line>34</line>
-          <properties class="com.TimeVenture.review.BaseReviewController" method="getAllReviews">
+          <properties class="com.TimeVenture.review.BaseReviewController">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -208,6 +322,14 @@
           <line>10</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/6.1.6/f887573c2b882a491ccc6e131d5f59c22950e23d/spring-context-6.1.6-sources.jar!/org/springframework/context/annotation/ConflictingBeanDefinitionException.java</url>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.springframework.beans.factory.BeanDefinitionStoreException" package="org.springframework.beans.factory" />
+          <option name="timeStamp" value="5" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

@@ -25,16 +25,16 @@ public class ProjectService {
         return projecetRepository.findAll();
     }
 
-    public Project findById(Long id) {
+    public Project findById(int id) {
         return projecetRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("not found: " + id));
     }
 
-    public void delete(Long id) {
+    public void delete(int id) {
         projecetRepository.deleteById(id);
     }
 
     @Transactional
-    public Project update(Long id, UpdateProjectDto request) {
+    public Project update(int id, UpdateProjectDto request) {
         Project project = projecetRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("not found: " + id));
 
         project.update(request.getPName(),

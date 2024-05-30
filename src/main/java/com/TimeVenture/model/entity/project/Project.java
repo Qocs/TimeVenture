@@ -17,18 +17,16 @@ import java.util.List;
 @Table(name = "Projects")
 public class Project {
 
-    @OneToMany(mappedBy = "projects", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "project", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<ProjectMember> projectMembers;
 
-    @OneToMany(mappedBy = "projects", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    private List<Task> Tasks;
-
-
+    @OneToMany(mappedBy = "pid", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private List<Task> tasks;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "p_id", nullable = false)
-    private Long pid;
+    private int pid;
 
     @Column(name = "p_name", nullable = false)
     private String pname;

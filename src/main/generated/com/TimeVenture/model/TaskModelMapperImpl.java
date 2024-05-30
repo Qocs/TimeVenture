@@ -12,11 +12,11 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-05-28T14:32:30+0900",
+    date = "2024-05-30T11:04:59+0900",
     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 17.0.10 (Oracle Corporation)"
 )
 @Component
-public class taskMapperImpl implements TaskMapper {
+public class TaskModelMapperImpl implements TaskModelMapper {
 
     @Override
     public Task toEntity(CreateTaskRequestDto requestDto) {
@@ -26,6 +26,7 @@ public class taskMapperImpl implements TaskMapper {
 
         TaskBuilder task = Task.builder();
 
+        task.pid( requestDto.getPid() );
         task.mid( requestDto.getMid() );
         task.pmember( requestDto.getPmember() );
         task.title( requestDto.getTitle() );

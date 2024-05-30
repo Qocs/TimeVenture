@@ -1,5 +1,11 @@
 package com.TimeVenture.service.task;
 
+import com.TimeVenture.model.TaskModelMapper;
+import com.TimeVenture.model.dto.task.CreateTaskRequestDto;
+import com.TimeVenture.model.dto.task.ResponseTaskDto;
+import com.TimeVenture.model.dto.task.UpdateTaskRequestDto;
+import com.TimeVenture.model.entity.project.Project;
+import com.TimeVenture.model.entity.projectMember.ProjectMember;
 import com.TimeVenture.model.entity.task.Task;
 import com.TimeVenture.model.enums.TaskSort;
 import com.TimeVenture.model.enums.TaskStatus;
@@ -15,14 +21,26 @@ import java.util.List;
 @Transactional
 public class TaskService {
     protected final TaskRepository taskRepository;
+    protected final TaskModelMapper taskModelMapper;
 
-    public TaskService(TaskRepository taskRepository) {
+    public TaskService(TaskRepository taskRepository, TaskModelMapper taskModelMapper) {
         this.taskRepository = taskRepository;
+        this.taskModelMapper = taskModelMapper;
     }
 
     // CREATE
-    public Task createTask(Task task) {
-        return taskRepository.save(task);
+    public ResponseTaskDto createTask(CreateTaskRequestDto requestDto) {
+        Task task = Task.builder()
+                .pid(requestDto.getPid())
+                .mid(requestDto.getMid())
+                .pmember(requestDto.getPmember())
+                .title(requestDto.getTitle())
+                .content(requestDto.getContent())
+                .priority(requestDto.getPriority())
+                .taskStatus(requestDto.getTaskStatus())
+                .build();
+        Task createdTask = taskRepository.save(task);
+        return taskModelMapper.toResponseDto(createdTask);
     }
 
     // READ
@@ -45,42 +63,44 @@ public class TaskService {
         return sortby;
     }
     // 모든 tasks 조회
-    public List<Task> getAllTasks() {
-        return taskRepository.findAll();
+    public List<ResponseTaskDto> getAllTasks() {
+        return taskModelMapper.toResponseDtoList(taskRepository.findAll());
     }
-    // 모든 tasks 조회 + 정렬 기능 추가
-    public List<Task> getTasksByPid(int pid, TaskStatus status, TaskSort sort) {
-        return taskRepository.findByPidAndTaskStatus(pid, status, getSortCriteria(sort));
+    public List<ResponseTaskDto> getTasksByPid(Project pid) {
+        return taskModelMapper.toResponseDtoList(taskRepository.findByPid(pid));
     }
     // 특정 task 내용 조회
-    public Task getTaskById(int tId) {
-        return taskRepository.findById(tId)
+    public ResponseTaskDto getTaskById(int tId) {
+        Task task = taskRepository.findById(tId)
                 .orElseThrow(() -> new EntityNotFoundException("Task not found with task_id: " + tId));
+        return taskModelMapper.toResponseDto(task);
     }
     // 검색
-    public List<Task> searchTitleOrderBy(String searchWord, Integer pid, Integer pmember, TaskSort sort, TaskStatus status) {
-        return taskRepository.findByPidAndTaskStatusAndPmemberAndTitleContaining(pid, status, pmember, searchWord, getSortCriteria(sort));
+    public List<ResponseTaskDto> searchTitleOrderBy(String searchWord, Project pid, ProjectMember pmember, TaskSort sort, TaskStatus status) {
+        return taskModelMapper.toResponseDtoList(taskRepository.findByPidAndTaskStatusAndPmemberAndTitleContaining(pid, status, pmember, searchWord, getSortCriteria(sort)));
     }
 
     /* UPDATE */
-    public Task updateTask(int tid, Task updatedTask) {
-        Task task = getTaskById(tid);
-        Task newTask = task.toBuilder()
-                .title(updatedTask.getTitle())
-                .content(updatedTask.getContent())
-                .priority(updatedTask.getPriority())
-                .taskStatus(updatedTask.getTaskStatus())
-                .dueDate(updatedTask.getDueDate())
+    public ResponseTaskDto updateTask(int tid, UpdateTaskRequestDto requestDto) {
+        Task task = taskRepository.findById(tid)
+                .orElseThrow(() -> new EntityNotFoundException("Task not found with task_id: " + tid));
+        Task updatedTask = task.toBuilder()
+                .title(requestDto.getTitle())
+                .content(requestDto.getContent())
+                .priority(requestDto.getPriority())
+                .taskStatus(requestDto.getTaskStatus())
+                .dueDate(requestDto.getDueDate())
                 .build();
-        return taskRepository.save(newTask);
+        return taskModelMapper.toResponseDto(taskRepository.save(updatedTask));
     }
 
     /* DELETE */
     public void deleteTask(int tid) {
-        Task task = getTaskById(tid);
+        Task task = taskRepository.findById(tid)
+                .orElseThrow(() -> new EntityNotFoundException("Task not found with task_id: " + tid));
         taskRepository.delete(task);
     }
-    public void deleteTasksByPidAndTaskStatus(int pid, TaskStatus status) {
+    public void deleteTasksByPidAndTaskStatus(Project pid, TaskStatus status) {
         List<Task> tasks = taskRepository.findByPidAndTaskStatus(pid, status, null);
         taskRepository.deleteAll(tasks);
     }

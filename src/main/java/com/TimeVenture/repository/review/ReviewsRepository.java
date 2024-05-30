@@ -12,6 +12,7 @@ ex) findBy(컬럼명), deleteBy(컬럼명)
 ex) @Query("쿼리") : 해당 부분에 직접 쿼리를 입력하여 사용도 가능함 */
 
 import com.TimeVenture.model.entity.review.Reviews;
+import com.TimeVenture.model.entity.task.Task;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -22,5 +23,5 @@ import java.util.List;
 public interface ReviewsRepository extends JpaRepository<Reviews, Integer> {
 
     //리뷰 조회 : tasks 별로 댓글이 조회되기 때문에 t_id를 조건으로 검색
-    List<Reviews> findByTid(int tid);
+    List<Reviews> findByTid(Task tid);
 }

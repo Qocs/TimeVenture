@@ -1,4 +1,4 @@
-package com.TimeVenture.task.model.enums;
+package com.TimeVenture.model.enums;
 
 public enum Action {
     INSERT,

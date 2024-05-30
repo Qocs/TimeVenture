@@ -39,11 +39,6 @@ dependencies {
 	testImplementation 'org.springframework.security:spring-security-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
-	//MapStruct 객체 간 매핑을 자동화 하기위한 라이브러리(DTO, entity 사이 매핑 처리)
-	implementation 'org.mapstruct:mapstruct:1.4.2.Final'
-	annotationProcessor "org.mapstruct:mapstruct-processor:1.4.2.Final"
-	annotationProcessor 'org.projectlombok:lombok-mapstruct-binding:0.2.0'
-
 	//메일전송 의존성 추가
 	implementation 'org.springframework.boot:spring-boot-starter-mail'
 	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
@@ -56,12 +51,17 @@ dependencies {
 	annotationProcessor "org.mapstruct:mapstruct-processor:1.4.2.Final"
 	annotationProcessor 'org.projectlombok:lombok-mapstruct-binding:0.2.0'
 
+/*
+	// Vue.js 라이브러리
 	implementation 'org.webjars.npm:vue:2.6.14'
 	implementation 'org.webjars.npm:vue-router:3.5.2'
 	implementation 'org.webjars.npm:vue-loader:15.9.8'
 	implementation 'org.webjars.npm:vue-template-compiler:2.6.14'
+*/
+
 }
 
-tasks.named('test') {
-	useJUnitPlatform()
+compileJava {
+	options.compilerArgs << "-parameters"
 }
+

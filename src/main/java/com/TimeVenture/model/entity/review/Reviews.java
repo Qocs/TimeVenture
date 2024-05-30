@@ -1,5 +1,8 @@
 package com.TimeVenture.model.entity.review;
 
+import com.TimeVenture.model.entity.member.Member;
+import com.TimeVenture.model.entity.task.Task;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -17,23 +20,19 @@ public class Reviews {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int reviewId;
 
-    @Column(name = "t_id")
-    private int tid;
+    @ManyToOne
+    @JoinColumn(name = "t_id")
+    @JsonManagedReference
+    private Task tid;
 
-    @Column(name = "m_id")
-    private String mid;
+    @ManyToOne
+    @JoinColumn(name = "m_id")
+    @JsonManagedReference
+    private Member mid;
 
     private String content;
 
     @Column(name = "created_date")
     private Timestamp createdDate;
 
-    // 외래키 제약 조건
-    /*@ManyToOne
-    @JoinColumn(name = "t_id")
-    private Task task;
-
-    @ManyToOne
-    @JoinColumn(name = "m_id")
-    private Member member;*/
 }

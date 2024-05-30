@@ -1,20 +1,19 @@
 package com.TimeVenture.model.entity.member;
+
 import com.TimeVenture.model.enums.Role;
 import jakarta.persistence.*;
-import lombok.AccessLevel;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.validation.constraints.NotNull;
 import java.sql.Timestamp;
-import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.List;
 
+@ToString
 @Entity
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
@@ -48,21 +47,20 @@ public class Member implements UserDetails {
     private String refreshToken;
 
 
-
     @Enumerated(EnumType.STRING)
     @Column(name = "m_role")
     private Role role;
 
     @Builder
-    public Member(String email, String name, String pwd, String img, String loginType, String refreshToken, Role role ) {
+    public Member(String email, String name, String pwd, String img, String loginType, String refreshToken, Timestamp regDate,Role role) {
         this.email = email;
         this.name = name;
         this.pwd = pwd;
         this.img = img;
+        this.regDate=regDate;
         this.loginType = loginType;
         this.refreshToken = refreshToken;
         this.role = role != null ? role : Role.USER; // 기본 역할을 USER로 설정
-        this.regDate = new Timestamp(System.currentTimeMillis());
     }
 
     @Override
@@ -111,7 +109,9 @@ public class Member implements UserDetails {
         return this;
     }
 
-    public void setRegDate(@NotNull Timestamp regDate) {
-        this.regDate = regDate;
+    // 업데이트 메서드 추가
+    public Member updateRefreshToken(String refreshToken) {
+        this.refreshToken = refreshToken;
+        return this;
     }
 }

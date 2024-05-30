@@ -32,21 +32,21 @@ public class ProjectController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<ResponseProjectDto> findOneProject(@PathVariable Long id) {
+    public ResponseEntity<ResponseProjectDto> findOneProject(@PathVariable int id) {
         Project project = projectService.findById(id);
 
         return ResponseEntity.ok().body(new ResponseProjectDto(project));
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<ResponseProjectDto> deleteProject(@PathVariable Long id) {
+    public ResponseEntity<ResponseProjectDto> deleteProject(@PathVariable int id) {
         projectService.delete(id);
 
         return ResponseEntity.ok().build();
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Project> updateProject(@PathVariable Long id, @RequestBody UpdateProjectDto request) {
+    public ResponseEntity<Project> updateProject(@PathVariable int id, @RequestBody UpdateProjectDto request) {
         Project updatedProject = projectService.update(id, request);
 
         return ResponseEntity.ok().body(updatedProject);

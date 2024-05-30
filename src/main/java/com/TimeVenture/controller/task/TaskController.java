@@ -4,8 +4,7 @@ import com.TimeVenture.model.TaskModelMapper;
 import com.TimeVenture.model.dto.task.CreateTaskRequestDto;
 import com.TimeVenture.model.dto.task.ResponseTaskDto;
 import com.TimeVenture.model.dto.task.UpdateTaskRequestDto;
-import com.TimeVenture.model.entity.task.Task;
-import com.TimeVenture.model.enums.TaskStatus;
+import com.TimeVenture.model.entity.project.Project;
 import com.TimeVenture.service.task.TaskService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -22,40 +21,33 @@ public class TaskController {
     private final TaskService taskService;
     private final TaskModelMapper taskMapper;
 
-    @GetMapping
-    public ResponseEntity<List<ResponseTaskDto>> getAllTasks() {
-        List<Task> tasks = taskService.getAllTasks();
-        List<ResponseTaskDto> responseDtos = taskMapper.toResponseDtoList(tasks);
-        return ResponseEntity.ok().body(responseDtos);
-    }
+//    @GetMapping
+//    public ResponseEntity<List<ResponseTaskDto>> getAllTasks() {
+//        List<ResponseTaskDto> responseDtos = taskService.getAllTasks();
+//        return ResponseEntity.ok().body(responseDtos);
+//    }
 
-    @GetMapping("/{pid}")
-    public ResponseEntity<List<ResponseTaskDto>> getTasksByProjectId(@PathVariable int pid, @RequestParam(required = false) TaskStatus status) {
-        List<Task> tasks = taskService.getTasksByPid(pid, status, null);
-        List<ResponseTaskDto> responseDtos = taskMapper.toResponseDtoList(tasks);
+    @GetMapping("/project/{pid}")
+    public ResponseEntity<List<ResponseTaskDto>> getTasksByProjectId(@PathVariable("pid") Project pid) {
+        List<ResponseTaskDto> responseDtos = taskService.getTasksByPid(pid);
         return ResponseEntity.ok().body(responseDtos);
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<ResponseTaskDto> getTaskById(@PathVariable int id) {
-        Task task = taskService.getTaskById(id);
-        ResponseTaskDto responseDto = taskMapper.toResponseDto(task);
+        ResponseTaskDto responseDto = taskService.getTaskById(id);
         return ResponseEntity.ok().body(responseDto);
     }
 
     @PostMapping
     public ResponseEntity<ResponseTaskDto> createTask(@RequestBody CreateTaskRequestDto requestDto) {
-        Task task = taskMapper.toEntity(requestDto);
-        Task createdTask = taskService.createTask(task);
-        ResponseTaskDto responseDto = taskMapper.toResponseDto(createdTask);
+        ResponseTaskDto responseDto = taskService.createTask(requestDto);
         return ResponseEntity.status(HttpStatus.CREATED).body(responseDto);
     }
 
     @PutMapping("/{id}")
     public ResponseEntity<ResponseTaskDto> updateTask(@PathVariable int id, @RequestBody UpdateTaskRequestDto requestDto) {
-        Task task = taskMapper.toEntity(requestDto);
-        Task updatedTask = taskService.updateTask(id, task);
-        ResponseTaskDto responseDto = taskMapper.toResponseDto(updatedTask);
+        ResponseTaskDto responseDto = taskService.updateTask(id, requestDto);
         return ResponseEntity.ok().body(responseDto);
     }
 

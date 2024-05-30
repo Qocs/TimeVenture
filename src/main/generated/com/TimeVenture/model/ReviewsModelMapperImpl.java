@@ -7,11 +7,11 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-05-28T16:36:16+0900",
+    date = "2024-05-30T11:04:59+0900",
     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 17.0.10 (Oracle Corporation)"
 )
 @Component
-public class reviewsMapperImpl implements ReviewsMapper {
+public class ReviewsModelMapperImpl implements ReviewsModelMapper {
 
     @Override
     public ReviewsDto toDto(Reviews reviews) {

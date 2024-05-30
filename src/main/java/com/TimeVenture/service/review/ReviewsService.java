@@ -1,9 +1,10 @@
 package com.TimeVenture.service.review;
 
 import com.TimeVenture.model.ReviewsModelMapper;
-import com.TimeVenture.model.entity.review.Reviews;
-import com.TimeVenture.repository.review.ReviewsRepository;
 import com.TimeVenture.model.dto.review.ReviewsDto;
+import com.TimeVenture.model.entity.review.Reviews;
+import com.TimeVenture.model.entity.task.Task;
+import com.TimeVenture.repository.review.ReviewsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,8 +26,6 @@ public class ReviewsService {
     //CREATE : 댓글 추가
     public ReviewsDto addReviews(ReviewsDto reviewsDto) {
         Reviews reviews = reviewsMapper.toReviews(reviewsDto);
-        reviews.setTid(1);//FK 설정 전으로 값 1
-        reviews.setMid("1");//FK 설정 전으로 값 1
         reviews.setCreatedDate(new Timestamp(System.currentTimeMillis()));
         Reviews saveReviews = reviewsRepository.save(reviews);
         return reviewsMapper.toDto(saveReviews);
@@ -37,7 +36,7 @@ public class ReviewsService {
         List<Reviews> reviews = reviewsRepository.findAll();
         return reviews.stream().map(reviewsMapper::toDto).toList() } */
     // READ : tasks 별 댓글 조회 (Reviews by Task ID)
-    public List<ReviewsDto> getReviewsByTid(int tid) {
+    public List<ReviewsDto> getReviewsByTid(Task tid) {
         List<Reviews> reviews = reviewsRepository.findByTid(tid);
         /* reviews.stream() : List를 Stream으로 변환
         map(reviewsMapper::toDto) : Reviews 를 ReviewsDto 객체로 변환하는 메서드 참조 / map : 각 요소를 변환하여 새로운 스트림 생성

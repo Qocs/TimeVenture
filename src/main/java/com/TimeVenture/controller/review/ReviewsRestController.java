@@ -1,11 +1,13 @@
 package com.TimeVenture.controller.review;
 
 import com.TimeVenture.model.dto.review.ReviewsDto;
+import com.TimeVenture.model.entity.task.Task;
 import com.TimeVenture.service.review.ReviewsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+
 
 @RestController
 @RequestMapping("/api/reviews")
@@ -34,7 +36,7 @@ public class ReviewsRestController {
 
     //READ : tasks 1개 당 생성되는 리뷰 조회(댓글 조회)
     @GetMapping("/{tid}")
-    public List<ReviewsDto> getReviews(@PathVariable("tid") int tid){
+    public List<ReviewsDto> getReviews(@PathVariable("tid") Task tid){
         return reviewsService.getReviewsByTid(tid);
     }
 

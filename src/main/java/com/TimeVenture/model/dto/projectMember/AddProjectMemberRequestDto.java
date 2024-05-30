@@ -15,11 +15,11 @@ import lombok.NoArgsConstructor;
 @Getter
 public class AddProjectMemberRequestDto {
 
-    private Long projectId;
+    private int projectId;
     private String memberId;
     private Auth auth;
 
- public ProjectMember toEntity(Project projectId, Member memberId) { // 변환하는 과정이기 때문에 객체 자체를 사용해야 한다.
+ public ProjectMember toEntity(Project projectId, Member memberId) {
      return ProjectMember.builder()
              .project(projectId)
              .member(memberId)

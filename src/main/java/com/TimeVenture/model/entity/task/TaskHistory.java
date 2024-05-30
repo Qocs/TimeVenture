@@ -3,6 +3,7 @@ package com.TimeVenture.model.entity.task;
 import com.TimeVenture.model.enums.Action;
 import com.TimeVenture.model.enums.Priority;
 import com.TimeVenture.model.enums.TaskStatus;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -20,13 +21,17 @@ public class TaskHistory {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int historyId;
 
-    @Column(name = "t_id")
-    private int tid;
+    @ManyToOne
+    @JoinColumn(name = "t_id")
+    @JsonManagedReference
+    private Task tid;
 
     @Column(name = "p_id")
     private int pid;
+
     @Column(name = "m_id")
     private String mid;
+
     @Column(name = "p_member")
     private Integer pmember;
 

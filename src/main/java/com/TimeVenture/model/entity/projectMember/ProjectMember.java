@@ -11,16 +11,17 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 @Entity
+@Table(name = "Project_Members")
 @Getter
 public class ProjectMember {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "p_member", nullable = false)
-    private Long projectMemberId;
+    private int projectMemberId;
 
     @ManyToOne
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "p_id")
     @JsonManagedReference
     private Project project;
 
@@ -32,8 +33,5 @@ public class ProjectMember {
     @JsonManagedReference
     private Member member;
 
-    public void setAuth(Auth auth) {
-        this.auth = auth;
-    }
 
 }

@@ -1,7 +1,7 @@
 package com.TimeVenture.model;
 
-import com.TimeVenture.model.entity.review.Reviews;
 import com.TimeVenture.model.dto.review.ReviewsDto;
+import com.TimeVenture.model.entity.review.Reviews;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

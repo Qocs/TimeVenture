@@ -58,25 +58,36 @@
         <button type="submit">Update</button>
     </form>
 </div>
-
 <script>
     $(document).ready(function() {
-        // 작업 클릭 이벤트
+        var currentTaskId;
+        var currentMemberId = 1; // 실제 사용자 ID로 설정
+
+        function loadSlidePanel() {
+            return $.ajax({
+                url: '/common/slide-panel.html',
+                type: 'GET',
+                success: function(data) {
+                    $('#slide-panel-container').html(data);
+                }
+            });
+        }
+
         $('.task').on('click', function() {
-            var taskId = $(this).data('task-id'); // 클릭한 작업의 ID 가져오기
-            loadReviews(taskId); // 해당 작업의 댓글 로드
-            $('#slide-panel').addClass('open'); // 슬라이드 패널 열기
+            currentTaskId = $(this).data('task-id');
+            loadSlidePanel().then(function() {
+                loadReviews(currentTaskId);
+                $('#slide-panel').addClass('open');
+            });
         });
 
-        // 댓글 목록을 로드하는 함수
         function loadReviews(taskId) {
             $.ajax({
-                url: '/api/reviews/' + taskId, // 해당 task의 댓글 목록을 가져옴
+                url: '/api/reviews/' + taskId,
                 type: 'GET',
                 success: function(reviews) {
-                    $('#review-list').empty(); // 기존 댓글 목록을 비움
+                    $('#review-list').empty();
                     reviews.forEach(function(review) {
-                        // 각 댓글을 HTML로 추가
                         $('#review-list').append(
                             '<div class="review" data-id="' + review.reviewId + '">' +
                             '<p>' + review.content + '</p>' +
@@ -92,21 +103,20 @@
             });
         }
 
-        // 댓글 추가 폼 제출 이벤트 처리
-        $('#review-form').on('submit', function(e) {
-            e.preventDefault(); // 폼의 기본 제출 동작을 막음
+        $('#slide-panel-container').on('submit', '#review-form', function(e) {
+            e.preventDefault();
             var reviewData = {
-                content: $('#content').val(), // 폼에서 입력한 댓글 내용
-                taskId: $('.task.active').data('task-id') // 현재 작업의 ID
+                content: $('#content').val(),
+                tid: { id: currentTaskId },
+                mid: { id: currentMemberId }
             };
 
             $.ajax({
-                url: '/api/reviews', // 댓글 추가 엔드포인트
+                url: '/api/reviews',
                 type: 'POST',
-                contentType: 'application/json', // JSON 형식으로 데이터 전송
-                data: JSON.stringify(reviewData), // 데이터를 JSON 문자열로 변환하여 전송
+                contentType: 'application/json',
+                data: JSON.stringify(reviewData),
                 success: function(newReview) {
-                    // 새로운 댓글을 HTML로 추가
                     $('#review-list').append(
                         '<div class="review" data-id="' + newReview.reviewId + '">' +
                         '<p>' + newReview.content + '</p>' +
@@ -117,51 +127,47 @@
                         '</div>' +
                         '</div>'
                     );
-                    $('#review-form')[0].reset(); // 폼 초기화
+                    $('#review-form')[0].reset();
                 }
             });
         });
 
-        // 댓글 수정 버튼 클릭 이벤트 처리
-        $('#review-list').on('click', '.edit-review', function() {
-            var reviewId = $(this).closest('.review').data('id'); // 수정할 댓글의 ID 가져오기
-            var content = $(this).closest('.review').find('p').text(); // 댓글 내용 가져오기
-            $('#edit-review-id').val(reviewId); // 수정 폼에 댓글 ID 설정
-            $('#edit-content').val(content); // 수정 폼에 댓글 내용 설정
-            $('#edit-review-form').show(); // 수정 폼 표시
+        $('#slide-panel-container').on('click', '.edit-review', function() {
+            var reviewId = $(this).closest('.review').data('id');
+            var content = $(this).closest('.review').find('p').text();
+            $('#edit-review-id').val(reviewId);
+            $('#edit-content').val(content);
+            $('#edit-review-form').show();
         });
 
-        // 댓글 수정 폼 제출 이벤트 처리
-        $('#edit-review-form').on('submit', function(e) {
-            e.preventDefault(); // 폼의 기본 제출 동작을 막음
-            var reviewId = $('#edit-review-id').val(); // 수정할 댓글의 ID
+        $('#slide-panel-container').on('submit', '#edit-review-form', function(e) {
+            e.preventDefault();
+            var reviewId = $('#edit-review-id').val();
             var reviewData = {
-                content: $('#edit-content').val() // 수정된 댓글 내용
+                content: $('#edit-content').val()
             };
 
             $.ajax({
-                url: '/api/reviews/' + reviewId, // 댓글 수정 엔드포인트
+                url: '/api/reviews/' + reviewId,
                 type: 'PUT',
-                contentType: 'application/json', // JSON 형식으로 데이터 전송
-                data: JSON.stringify(reviewData), // 데이터를 JSON 문자열로 변환하여 전송
+                contentType: 'application/json',
+                data: JSON.stringify(reviewData),
                 success: function(updatedReview) {
-                    // 수정된 댓글 내용 업데이트
                     var reviewDiv = $('div[data-id="' + reviewId + '"]');
                     reviewDiv.find('p').text(updatedReview.content);
-                    $('#edit-review-form').hide(); // 수정 폼 숨기기
+                    $('#edit-review-form').hide();
                 }
             });
         });
 
-        // 댓글 삭제 버튼 클릭 이벤트 처리
-        $('#review-list').on('click', '.delete-review', function() {
-            var reviewId = $(this).closest('.review').data('id'); // 삭제할 댓글의 ID 가져오기
+        $('#slide-panel-container').on('click', '.delete-review', function() {
+            var reviewId = $(this).closest('.review').data('id');
 
             $.ajax({
-                url: '/api/reviews/' + reviewId, // 댓글 삭제 엔드포인트
+                url: '/api/reviews/' + reviewId,
                 type: 'DELETE',
                 success: function() {
-                    $('div[data-id="' + reviewId + '"]').remove(); // 댓글 요소를 삭제
+                    $('div[data-id="' + reviewId + '"]').remove();
                 }
             });
         });

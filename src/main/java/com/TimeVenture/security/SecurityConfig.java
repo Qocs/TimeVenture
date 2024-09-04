@@ -1,8 +1,10 @@
 package com.TimeVenture.security;
 
+import com.TimeVenture.jwt.JwtAccessDeniedHandler;
 import com.TimeVenture.jwt.JwtAuthenticationEntryPoint;
 import com.TimeVenture.jwt.JwtAuthenticationFilter;
 import com.TimeVenture.jwt.JwtTokenProvider;
+import com.TimeVenture.model.entity.member.service.CustomOAuth2UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -28,6 +30,8 @@ public class SecurityConfig {
     private final JwtTokenProvider jwtTokenProvider;
     private final JwtAuthenticationEntryPoint jwtAuthenticationEntryPoint;
     private final UserDetailsService userDetailsService;
+    private final JwtAccessDeniedHandler jwtAccessDeniedHandler;
+    private final CustomOAuth2UserService customOAuth2UserService;
 
     @Bean
     public PasswordEncoder passwordEncoder() {
@@ -41,6 +45,7 @@ public class SecurityConfig {
                 .cors(cors -> {}) // 기본 CORS 설정을 활성화
                 .exceptionHandling(ex -> ex
                         .authenticationEntryPoint(jwtAuthenticationEntryPoint) // 인증되지 않은 사용자가 접근 시 예외 처리
+                        .accessDeniedHandler(jwtAccessDeniedHandler)
                 )
                 .sessionManagement(session -> session
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS) // JWT 인증을 위해 세션을 사용하지 않겠다.
@@ -51,6 +56,9 @@ public class SecurityConfig {
                 )
                 .oauth2Login(oauth2 -> oauth2
                         .defaultSuccessUrl("/home")  //로그인 성공 시 리다이렉트 URL
+                        .userInfoEndpoint(userInfo -> userInfo
+                                .userService(customOAuth2UserService) // customOAuth2UserService 설정
+                        )
                 );
 
         //JWT 필터를 기본 인증 필터 전에 추가

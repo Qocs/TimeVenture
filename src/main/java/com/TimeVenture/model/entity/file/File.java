@@ -1,6 +1,6 @@
 package com.TimeVenture.model.entity.file;
 
-import com.TimeVenture.model.entity.member.Member;
+import com.TimeVenture.model.entity.member.entity.Member;
 import com.TimeVenture.model.entity.task.Task;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;

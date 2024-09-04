@@ -1,6 +1,6 @@
 package com.TimeVenture.model.dto.review;
 
-import com.TimeVenture.model.entity.member.Member;
+import com.TimeVenture.model.entity.member.entity.Member;
 import com.TimeVenture.model.entity.task.Task;
 import lombok.Data;
 

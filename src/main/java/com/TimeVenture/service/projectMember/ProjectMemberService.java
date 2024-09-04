@@ -1,7 +1,7 @@
 package com.TimeVenture.service.projectMember;
 
 import com.TimeVenture.model.dto.projectMember.AddProjectMemberRequestDto;
-import com.TimeVenture.model.entity.member.Member;
+import com.TimeVenture.model.entity.member.entity.Member;
 import com.TimeVenture.model.entity.project.Project;
 import com.TimeVenture.model.entity.projectMember.ProjectMember;
 import com.TimeVenture.repository.member.MemberRepository;

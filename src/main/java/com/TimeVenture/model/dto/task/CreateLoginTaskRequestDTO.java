@@ -1,8 +1,6 @@
 package com.TimeVenture.model.dto.task;
 
-import com.TimeVenture.model.entity.member.Member;
 import com.TimeVenture.model.entity.task.Task;
-import com.TimeVenture.model.enums.Role;
 import lombok.Getter;
 import lombok.Setter;
 

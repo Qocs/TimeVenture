@@ -1,6 +1,6 @@
 package com.TimeVenture.model.dto.file;
 
-import com.TimeVenture.model.entity.member.Member;
+import com.TimeVenture.model.entity.member.entity.Member;
 import com.TimeVenture.model.entity.task.Task;
 import lombok.Data;
 

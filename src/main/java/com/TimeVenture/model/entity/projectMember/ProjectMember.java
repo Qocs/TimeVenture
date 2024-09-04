@@ -1,6 +1,6 @@
 package com.TimeVenture.model.entity.projectMember;
 
-import com.TimeVenture.model.entity.member.Member;
+import com.TimeVenture.model.entity.member.entity.Member;
 import com.TimeVenture.model.entity.project.Project;
 import com.TimeVenture.model.enums.Auth;
 import com.fasterxml.jackson.annotation.JsonManagedReference;

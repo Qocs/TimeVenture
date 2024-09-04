@@ -1,6 +1,6 @@
 package com.TimeVenture.model.dto.member.google;
 
-import com.TimeVenture.model.entity.member.Member;
+import com.TimeVenture.model.entity.member.entity.Member;
 import com.TimeVenture.model.enums.Role;
 import lombok.Data;
 import lombok.Getter;

@@ -1,7 +1,6 @@
 package com.TimeVenture.model.entity.task;
 
-import com.TimeVenture.model.entity.review.Reviews;
-import com.TimeVenture.model.entity.member.Member;
+import com.TimeVenture.model.entity.member.entity.Member;
 import com.TimeVenture.model.entity.project.Project;
 import com.TimeVenture.model.entity.projectMember.ProjectMember;
 import com.TimeVenture.model.enums.Priority;

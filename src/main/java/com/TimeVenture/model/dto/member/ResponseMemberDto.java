@@ -1,6 +1,6 @@
 package com.TimeVenture.model.dto.member;
 
-import com.TimeVenture.model.entity.member.Member;
+import com.TimeVenture.model.entity.member.entity.Member;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;

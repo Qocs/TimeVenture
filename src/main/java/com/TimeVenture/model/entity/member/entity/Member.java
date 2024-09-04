@@ -1,4 +1,4 @@
-package com.TimeVenture.model.entity.member;
+package com.TimeVenture.model.entity.member.entity;
 
 import com.TimeVenture.model.enums.Role;
 import jakarta.persistence.*;

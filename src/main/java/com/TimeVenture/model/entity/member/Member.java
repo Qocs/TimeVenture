@@ -21,9 +21,9 @@ import java.util.List;
 public class Member implements UserDetails {
 
     @Id
-    @Column(name = "m_id")
+    @Column(name = "m_id", unique = true)
     @NotNull
-    private String email; // 이메일을 ID로 사용
+    private String email;
 
     @Column(name = "m_name")
     @NotNull
@@ -35,32 +35,33 @@ public class Member implements UserDetails {
     @Column(name = "m_img")
     private String img;
 
-    @Column(name = "m_regdate")
+    @CreationTimestamp
+    @Column(name = "m_regdate", updatable = false)
     @NotNull
     private Timestamp regDate;
 
+    @Enumerated(EnumType.STRING)
     @Column(name = "m_logintype")
     @NotNull
-    private String loginType;
+    private LoginType loginType; // 수정된 부분
 
     @Column(name = "m_token")
     private String refreshToken;
-
 
     @Enumerated(EnumType.STRING)
     @Column(name = "m_role")
     private Role role;
 
     @Builder
-    public Member(String email, String name, String pwd, String img, String loginType, String refreshToken, Timestamp regDate,Role role) {
+    public Member(String email, String name, String pwd, String img, LoginType loginType, String refreshToken, Timestamp regDate, Role role) {
         this.email = email;
         this.name = name;
         this.pwd = pwd;
         this.img = img;
-        this.regDate=regDate;
-        this.loginType = loginType;
+        this.regDate = regDate;
+        this.loginType = loginType != null ? loginType : LoginType.LOCAL; // 기본 로그인 타입을 LOCAL로 설정
         this.refreshToken = refreshToken;
-        this.role = role != null ? role : Role.USER; // 기본 역할을 USER로 설정
+        this.role = role != null ? role : Role.USER;
     }
 
     @Override
@@ -73,19 +74,16 @@ public class Member implements UserDetails {
         return pwd;
     }
 
-    //사용할 아이디
     @Override
     public String getUsername() {
         return email;
     }
 
-    //계정의 유효성
     @Override
     public boolean isAccountNonExpired() {
         return true;
     }
 
-    //계정의 락 여부
     @Override
     public boolean isAccountNonLocked() {
         return true;
@@ -101,7 +99,6 @@ public class Member implements UserDetails {
         return true;
     }
 
-
     public Member update(String name, String img, String refreshToken) {
         this.name = name;
         this.img = img;
@@ -109,7 +106,6 @@ public class Member implements UserDetails {
         return this;
     }
 
-    // 업데이트 메서드 추가
     public Member updateRefreshToken(String refreshToken) {
         this.refreshToken = refreshToken;
         return this;

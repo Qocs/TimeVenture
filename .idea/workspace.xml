@@ -5,74 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c336b7ff-2a1b-42b1-ab59-635c2ead01a2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/generated/com/TimeVenture/model/reviewsMapperImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/generated/com/TimeVenture/model/taskMapperImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/controller/FrontController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/controller/FrontController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/controller/member/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/controller/member/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/controller/project/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/controller/project/ProjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/controller/projectMember/ProjectMemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/controller/projectMember/ProjectMemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/controller/review/ReviewsRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/controller/review/ReviewsRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/controller/task/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/controller/task/TaskController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/ReviewsMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/ReviewsModelMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/ReviewsModelMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/TaskMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/dto/member/AddMemberRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/dto/member/AddMemberRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/dto/member/ResponseMemberDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/dto/member/ResponseMemberDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/dto/projectMember/AddProjectMemberRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/dto/projectMember/AddProjectMemberRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/dto/projectMember/ResponseProjectMemberDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/dto/projectMember/ResponseProjectMemberDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/dto/review/ReviewsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/dto/review/ReviewsDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/dto/task/CreateTaskRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/dto/task/CreateTaskRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/dto/task/ResponseTaskDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/dto/task/ResponseTaskDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/dto/task/TaskHistoryDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/dto/task/TaskHistoryDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/config/member/auth/CustomOAuth2UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/config/member/auth/EmailAuthenticationSuccessHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/config/member/auth/OAuthAttributes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/config/member/auth/Oauth2ClientConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/controller/member/google/GoogleController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/entity/member/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/entity/member/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/entity/project/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/entity/project/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/entity/projectMember/ProjectMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/entity/projectMember/ProjectMember.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/entity/review/Reviews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/entity/review/Reviews.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/entity/task/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/entity/task/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/entity/task/TaskHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/entity/task/TaskHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/enums/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/enums/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/enums/Priority.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/model/enums/Priority.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/repository/member/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/repository/member/MemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/repository/project/ProjecetRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/repository/project/ProjecetRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/repository/projectMember/ProjectMemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/repository/projectMember/ProjectMemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/repository/review/ReviewsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/repository/review/ReviewsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/repository/task/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/repository/task/TaskRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/service/member/MemberService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/service/project/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/service/project/ProjectService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/service/projectMember/ProjectMemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/service/projectMember/ProjectMemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/service/review/ReviewsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/service/review/ReviewsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/service/task/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TimeVenture/service/task/TaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TimeVenture/service/member/google/GoogleMemberService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/reviewTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/reviewTest.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,6 +53,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -117,22 +61,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "PastelQ"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;PastelQ&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Mongdori00/TimeVenture.git",
-    "accountId": "72ea9216-74b6-456e-bc28-b14324850266"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Mongdori00/TimeVenture.git&quot;,
+    &quot;accountId&quot;: &quot;72ea9216-74b6-456e-bc28-b14324850266&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2h3XobboFdMl6GdwXhPaurlMpS9" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -149,9 +96,9 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.TimeVentureApplication.executor": "Run",
-    "git-widget-placeholder": "pastelq",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Study/SpringIntelliJ/workspace/TimeVenture/src/main/java/com/TimeVenture/service/member",
+    "last_opened_file_path": "D:/TimeVenture/build.gradle",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -165,6 +112,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.TimeVenture.model.entity.member" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Study\SpringIntelliJ\workspace\TimeVenture\src\main\java\com\TimeVenture\service\member" />
     </key>
@@ -181,6 +131,19 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="TimeVenture" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="TimeVenture" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TimeVentureApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="TimeVenture.main" />
@@ -189,14 +152,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

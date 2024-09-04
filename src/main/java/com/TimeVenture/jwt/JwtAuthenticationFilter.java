@@ -5,8 +5,10 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
@@ -24,12 +26,20 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
 
-        String token = resolveToken(request);
+        String token = resolveToken(request); // 요청에서 JWT 토큰을 추출한다.
 
-        if (token != null && jwtTokenProvider.validateToken(token)) {
-            String username = jwtTokenProvider.getUsernameFromToken(token);
-            UserDetails userDetails = userDetailsService.loadUserByUsername(username);
+        if (token != null && jwtTokenProvider.validateToken(token)) { // 토큰이 존재하고 유효하다면
+            String username = jwtTokenProvider.getUsernameFromToken(token); // 토큰으로부터 사용자이름을 추출한다.
+            UserDetails userDetails = userDetailsService.loadUserByUsername(username); // 그리고 사용자 정보를 로드한다.
+
+            if (userDetails != null) { // 사용자 정보가 유효하다면
+                // 스프링 시큐리티 컨텍스트에 인증 설정
+                JwtAuthenticationToken authentication = new JwtAuthenticationToken(userDetails, null, userDetails.getAuthorities());
+                authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
+                SecurityContextHolder.getContext().setAuthentication(authentication);
+            }
         }
+        filterChain.doFilter(request, response); // 다음 필터로 요청 전달
     }
 
     // 요청 헤더에서 JWT 토큰을 추출하는 메서드

@@ -1,6 +1,7 @@
 package com.TimeVenture.jwt;
 
 import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.security.Keys;
@@ -71,8 +72,19 @@ public class JwtTokenProvider {
     }
 
     //JWT 토큰 유효성 체크
-    public boolean validateToken(String token, UserDetails userDetails) {
-        String username = getUsernameFromToken(token);
-        return (username.equals(userDetails.getUsername()) && !isTokenExpired(token));
+    public boolean validateToken(String token) {
+        try {
+            //서명을 검증하고 클레임을 파싱
+            Jws<Claims> claimsJws = Jwts.parserBuilder()
+                    .setSigningKey(secretKey)
+                    .build()
+                    .parseClaimsJws(token);
+
+            // 만료 시간 확인
+            return !isTokenExpired(token);
+        } catch (Exception e) {
+            //예외가 발생하면 유효하지 않은 토큰
+            return false;
+        }
     }
 }

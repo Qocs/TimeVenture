@@ -1,6 +1,7 @@
 package com.TimeVenture.security;
 
 import com.TimeVenture.jwt.JwtAuthenticationEntryPoint;
+import com.TimeVenture.jwt.JwtAuthenticationFilter;
 import com.TimeVenture.jwt.JwtTokenProvider;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
@@ -53,7 +54,7 @@ public class SecurityConfig {
                 );
 
         //JWT 필터를 기본 인증 필터 전에 추가
-        http.addFilterBefore(new JwtAuthenticationFilter(jwtTokenProvider), UsernamePasswordAuthenticationFilter.class);
+        http.addFilterBefore(new JwtAuthenticationFilter(jwtTokenProvider, userDetailsService), UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
     }

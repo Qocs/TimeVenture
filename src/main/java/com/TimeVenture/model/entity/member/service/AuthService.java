@@ -21,7 +21,6 @@ public class AuthService {
     private final RefreshTokenService refreshTokenService;
 
     public String refreshAccessToken(String refreshToken) {
-
         //Redis에서 리프레시 토큰 검색
         Optional<Member> memberOptional = memberRepository.findByEmail(jwtTokenProvider.getEmailFromToken(refreshToken));
         if (memberOptional.isPresent()) {

@@ -5,6 +5,7 @@ import com.TimeVenture.model.entity.member.entity.Member;
 import com.TimeVenture.model.entity.member.dto.AuthResponse;
 import com.TimeVenture.model.entity.member.dto.LoginRequest;
 import com.TimeVenture.model.entity.member.dto.RegisterRequest;
+import com.TimeVenture.model.entity.member.service.AuthService;
 import com.TimeVenture.repository.member.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -26,12 +27,13 @@ public class AuthController {
     private final JwtTokenProvider jwtTokenProvider;
     private final MemberRepository memberRepository;
     private final PasswordEncoder passwordEncoder;
+    private final AuthService authService;
 
     @PostMapping("/register")
     public ResponseEntity<AuthResponse> register(@RequestBody RegisterRequest request) {
         //이메일 중복 확인
         if (memberRepository.existsByEmail(request.getEmail())) {
-            return ResponseEntity.badRequest().body(new AuthResponse("해당 이메일은 이미 존재해요.", null));
+            return ResponseEntity.badRequest().body(new AuthResponse("해당 이메일은 이미 존재해요."));
         }
 
         //새로운 사용자 생성 및 저장
@@ -44,7 +46,7 @@ public class AuthController {
 
         memberRepository.save(member);
 
-        return ResponseEntity.ok(new AuthResponse("회원가입을 성공했어요.", null));
+        return ResponseEntity.ok(new AuthResponse("회원가입을 성공했어요."));
     }
 
     @PostMapping("/login")
@@ -59,5 +61,22 @@ public class AuthController {
 
         //사용자 정의 응답 객체 반환
         return ResponseEntity.ok(new AuthResponse("로그인에 성공했어요.", jwtToken));
+    }
+
+
+    //클라이언트 측 코드에서 응답에서 자동으로 액세스토큰이 만료되었다는것을 감지할 수 있는 axios 인터셉터를 이용해 해당 메서드 자동으로 동작하도록 유도
+    @PostMapping("/refresh")
+    public ResponseEntity<AuthResponse> refreshToken(@RequestBody String refreshToken) {
+        try {
+            String newTokens = authService.refreshAccessToken(refreshToken);
+            String[] tokens = newTokens.split(", ");
+            String newAccessToken = tokens[0];
+            String newRefreshToken = tokens[1];
+
+            // 클라이언트에 새 토큰 반환
+            return ResponseEntity.ok(new AuthResponse("새로운 액세스 토큰이 발급되었어요.", newAccessToken, newRefreshToken));
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.badRequest().body(new AuthResponse(e.getMessage()));
+        }
     }
 }

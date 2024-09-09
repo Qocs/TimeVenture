@@ -1,5 +1,6 @@
 package com.TimeVenture.model.dto.member.google;
 
+import com.TimeVenture.model.entity.member.entity.LoginType;
 import com.TimeVenture.model.entity.member.entity.Member;
 import com.TimeVenture.model.enums.Role;
 import lombok.AllArgsConstructor;
@@ -17,7 +18,7 @@ public class ResponseMemberDto {
     private String pwd;
     private String img;
     private Timestamp regDate;
-    private String loginType;
+    private LoginType loginType;
     private String refreshToken;
     private Role role;
 

@@ -1,5 +1,6 @@
 package com.TimeVenture.model.dto.member.google;
 
+import com.TimeVenture.model.entity.member.entity.LoginType;
 import com.TimeVenture.model.entity.member.entity.Member;
 import com.TimeVenture.model.enums.Role;
 import lombok.Data;
@@ -17,7 +18,7 @@ public class AddMemberRequestDto {
     private String pwd;
     private String img;
     private Timestamp regDate;
-    private String loginType;
+    private LoginType loginType;
     private String refreshToken;
     private Role role;
 
@@ -33,7 +34,7 @@ public class AddMemberRequestDto {
                 .name(name)
                 .pwd(pwd)
                 .img(img)
-                .loginType(loginType)
+                .loginType(LoginType.LOCAL)
                 .refreshToken(refreshToken)
                 .role(assignedRole)
                 .regDate(registrationDate)

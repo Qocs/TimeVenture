@@ -6,6 +6,7 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.security.Keys;
 import jakarta.annotation.PostConstruct;
+import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
@@ -22,11 +23,15 @@ public class JwtTokenProvider {
     /*
     JWT 토큰을 생성하고 검증하는 클래스
      */
-    @Value("${jwt.secret")
+    @Value("${jwt.secret}")
     private String secretKeyText; //평문 비밀 키(인코딩 되기 전)
 
-    @Value("${jwt.expiration")
+    @Value("${jwt.expiration}")
     private long expiration;
+
+    @Getter
+    @Value("${jwt.refresh-token-validity-in-seconds}")
+    private long refreshTokenValidityInSeconds;
 
     private SecretKey secretKey; // 실제 서명에 사용할 SecretKey 객체
 
@@ -48,6 +53,18 @@ public class JwtTokenProvider {
                 .setIssuedAt(now)
                 .setExpiration(validity)
                 .signWith(SignatureAlgorithm.HS512, secretKey)
+                .compact();
+    }
+
+    public String createRefreshToken(String email) {
+        Date now = new Date();
+        Date validity = new Date(now.getTime() + refreshTokenValidityInSeconds * 1000);
+
+        return Jwts.builder()
+                .setSubject(email)
+                .setIssuedAt(now)
+                .setExpiration(validity)
+                .signWith(secretKey, SignatureAlgorithm.HS512)
                 .compact();
     }
 
@@ -86,5 +103,14 @@ public class JwtTokenProvider {
             //예외가 발생하면 유효하지 않은 토큰
             return false;
         }
+    }
+
+    public String getEmailFromToken(String token) {
+        Claims claims = Jwts.parserBuilder()
+                .setSigningKey(secretKey)
+                .build()
+                .parseClaimsJws(token)
+                .getBody();
+        return claims.getSubject();
     }
 }

@@ -9,6 +9,7 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.validation.constraints.NotNull;
+import java.sql.Time;
 import java.sql.Timestamp;
 import java.util.Collection;
 import java.util.List;
@@ -43,17 +44,20 @@ public class Member implements UserDetails {
     @Enumerated(EnumType.STRING)
     @Column(name = "m_logintype")
     @NotNull
-    private LoginType loginType; // 수정된 부분
+    private LoginType loginType;
 
     @Column(name = "m_token")
     private String refreshToken;
+
+    @Column(name = "m_token_expiry")
+    private Timestamp refreshTokenExpiry; // 리프레시 토큰 만료 시간
 
     @Enumerated(EnumType.STRING)
     @Column(name = "m_role")
     private Role role;
 
     @Builder
-    public Member(String email, String name, String pwd, String img, LoginType loginType, String refreshToken, Timestamp regDate, Role role) {
+    public Member(String email, String name, String pwd, String img, LoginType loginType, String refreshToken, Timestamp regDate, Timestamp refreshTokenExpiry, Role role) {
         this.email = email;
         this.name = name;
         this.pwd = pwd;
@@ -61,6 +65,7 @@ public class Member implements UserDetails {
         this.regDate = regDate;
         this.loginType = loginType != null ? loginType : LoginType.LOCAL; // 기본 로그인 타입을 LOCAL로 설정
         this.refreshToken = refreshToken;
+        this.refreshTokenExpiry = refreshTokenExpiry;
         this.role = role != null ? role : Role.USER;
     }
 
@@ -106,8 +111,9 @@ public class Member implements UserDetails {
         return this;
     }
 
-    public Member updateRefreshToken(String refreshToken) {
+    public Member updateRefreshToken(String refreshToken, Timestamp refreshTokenExpiry) {
         this.refreshToken = refreshToken;
+        this.refreshTokenExpiry = refreshTokenExpiry;
         return this;
     }
 }

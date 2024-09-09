@@ -1,5 +1,7 @@
 package com.TimeVenture.model.dto.task;
 
+import com.TimeVenture.model.entity.member.entity.Member;
+import com.TimeVenture.model.entity.project.Project;
 import com.TimeVenture.model.entity.task.Task;
 import lombok.Getter;
 import lombok.Setter;
@@ -11,9 +13,9 @@ import java.sql.Timestamp;
 public class CreateLoginTaskRequestDTO {
 
     private int tid;
-    private String mid;
+    private Member mid;
     private String title;
-    private int pid;
+    private Project pid;
     private Timestamp createdDate;
 
     public Task toEntity() {

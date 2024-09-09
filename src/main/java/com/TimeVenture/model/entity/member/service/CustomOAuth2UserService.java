@@ -13,6 +13,7 @@ import org.springframework.security.oauth2.core.user.DefaultOAuth2User;
 import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.stereotype.Service;
 
+import java.sql.Timestamp;
 import java.util.Collections;
 import java.util.Map;
 import java.util.Optional;
@@ -48,15 +49,29 @@ public class CustomOAuth2UserService implements OAuth2UserService<OAuth2UserRequ
         }
 
         //새로운 사용자 저장
-        Member newMember = Member.builder()
-                .email(email)
-                .name(oAuth2User.getAttribute("name"))
-                .role(Role.USER)
-                .build();
+        Member newMember = saveNewMember(oAuth2User);
 
         return new DefaultOAuth2User(
                 Collections.singleton(new SimpleGrantedAuthority(Role.USER.name())),
                 attributes,
                 userNameAttributeName);
     };
+
+    private Member saveNewMember(OAuth2User oAuth2User) {
+        // 필요한 사용자 정보를 추출
+        String email = oAuth2User.getAttribute("email");
+        String name = oAuth2User.getAttribute("name");
+        String imageUrl = oAuth2User.getAttribute("picture");
+
+        Member newMember = Member.builder()
+                .email(email)
+                .name(name)
+                .img(imageUrl)
+                .role(Role.USER)
+                .regDate(new Timestamp(System.currentTimeMillis()))
+                .build();
+
+        //새로운 사용자 정보를 DB에 저장
+        return memberRepository.save(newMember);
+    }
 }

@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 @Getter
 public class AddProjectMemberRequestDto {
 
-    private int projectId;
+    private long projectId;
     private String memberId;
     private Auth auth;
 

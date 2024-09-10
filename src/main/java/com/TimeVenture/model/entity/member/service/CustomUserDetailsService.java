@@ -24,6 +24,21 @@ public class CustomUserDetailsService implements UserDetailsService {
         Member member = memberRepository.findByEmail(email)
                 .orElseThrow(() -> new UsernameNotFoundException("해당 이메일로 사용자를 찾을 수 없어요."));
 
-        return member; //멤버 엔티티가 UserDetails 인터페이스를 구현하고 있으므로 반환 가능
+        return member; //   멤버 엔티티가 UserDetails 인터페이스를 구현하고 있으므로 반환 가능
     }
+
+    /*
+        - 토큰의 만료 및 보안 문제
+            - 만료된 토큰 처리
+            - 탈취된 토큰 문제
+            - 토큰 크기에 따른 성능 문제
+
+            로그인 화면에서 발생할 수 있는 문제점과 예외 처리 방법
+                - 네트워크 오류
+                - 잘못된 사용자 입력
+                - 토큰 만료
+                - 서버 오류
+                - 브라우저 호환성 문제
+
+     */
 }

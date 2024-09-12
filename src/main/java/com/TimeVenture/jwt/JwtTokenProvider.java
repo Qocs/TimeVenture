@@ -1,9 +1,7 @@
 package com.TimeVenture.jwt;
 
-import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.Jws;
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
+import com.TimeVenture.exception.*;
+import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;
 import jakarta.annotation.PostConstruct;
 import lombok.Getter;
@@ -91,26 +89,34 @@ public class JwtTokenProvider {
     //JWT 토큰 유효성 체크
     public boolean validateToken(String token) {
         try {
-            //서명을 검증하고 클레임을 파싱
-            Jws<Claims> claimsJws = Jwts.parserBuilder()
+            Jwts.parserBuilder()
                     .setSigningKey(secretKey)
                     .build()
                     .parseClaimsJws(token);
-
-            // 만료 시간 확인
-            return !isTokenExpired(token);
-        } catch (Exception e) {
-            //예외가 발생하면 유효하지 않은 토큰
-            return false;
+            return true;
+        } catch (JwtException | IllegalArgumentException e) {
+            throw new JwtTokenInvalidException("유효하지 않은 JWT 토큰입니다.");
         }
     }
 
     public String getEmailFromToken(String token) {
-        Claims claims = Jwts.parserBuilder()
-                .setSigningKey(secretKey)
-                .build()
-                .parseClaimsJws(token)
-                .getBody();
-        return claims.getSubject();
+        try {
+            Claims claims = Jwts.parserBuilder()
+                    .setSigningKey(secretKey)
+                    .build()
+                    .parseClaimsJws(token)
+                    .getBody();
+            return claims.getSubject();
+        } catch (ExpiredJwtException e) {
+            throw new JwtTokenExpiredException("JWT 토큰이 만료되었습니다.");
+        } catch (UnsupportedJwtException e) {
+            throw new JwtTokenUnsupportedException("지원되지 않는 JWT 토큰입니다.");
+        } catch (MalformedJwtException e) {
+            throw new JwtTokenMalformedException("JWT 토큰이 잘못되었습니다.");
+        } catch (SignatureException e) {
+            throw new JwtTokenSignatureException("JWT 서명이 잘못되었습니다.");
+        } catch (IllegalArgumentException e) {
+            throw new JwtTokenMissingException("JWT 토큰이 없습니다.");
+        }
     }
 }

@@ -29,7 +29,7 @@ public class JwtTokenProvider {
 
     @Getter
     @Value("${jwt.refresh-token-validity-in-seconds}")
-    private long refreshTokenValidityInSeconds;
+    private long refreshExpiration;
 
     private SecretKey secretKey; // 실제 서명에 사용할 SecretKey 객체
 
@@ -40,7 +40,7 @@ public class JwtTokenProvider {
         secretKey = Keys.hmacShaKeyFor(keyBytes);
     }
 
-    //JWT 토큰 생성
+    //액세스 토큰 생성
     public String createToken(Authentication authentication) {
         UserDetails userDetails = (UserDetails) authentication.getPrincipal();
         Date now = new Date();
@@ -56,7 +56,7 @@ public class JwtTokenProvider {
 
     public String createRefreshToken(String email) {
         Date now = new Date();
-        Date validity = new Date(now.getTime() + refreshTokenValidityInSeconds * 1000);
+        Date validity = new Date(now.getTime() + refreshExpiration * 1000);
 
         return Jwts.builder()
                 .setSubject(email)

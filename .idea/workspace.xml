@@ -43,10 +43,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Enum" />
         <option value="JUnit5 Test Class" />
         <option value="Exception" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
